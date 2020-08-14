@@ -1,0 +1,28 @@
+<div class="prdImg fadeInUp">
+	<div class="conv div mov03">
+		<div class="cart">{$basket_icon}</div>
+		<div class="wish">{$list_wish_icon}</div>
+	</div>	
+	<div class="prd_tmb">
+		<a href="{$link_product_detail}" style="background-image:url('{$image_big}');" class="over tmb-over"><img src="{$image_big}" id="{$image_big_id}" alt="{$seo_alt_tag}"></a>
+		<a href="{$link_product_detail}" style="background-image:url('{$image_medium}');"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"></a>
+	</div>
+</div>
+<div class="prdInfo">
+	<div>
+		<div>
+			<div class="prd_name"><a href="{$link_product_detail}">{$product_name}</a><div class="conv like {$disp_likeprd_class}"><button type="button" class="div">{$disp_likeprd_icon}{$disp_likeprd_count}</button></div><div class="conv option">{$option_preview_icon}</div></div>
+			<ul module="search_ListItem" class="prd_spec">
+				<li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+				<li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+			</ul>
+			<div class="color {$colorchip_display|display}">
+				<div module="product_Colorchip" class="div">
+					<span class="chips" style="background-color:{$color};"></span>
+					<span class="chips" style="background-color:{$color};"></span>
+				</div>
+			</div>
+			<div class="prd_ic">{$soldout_icon}{$stock_icon}{$recommend_icon}{$new_icon}{$product_icons}{$pickup_icon}{$benefit_icons}</div>
+		</div>
+	</div>
+</div>

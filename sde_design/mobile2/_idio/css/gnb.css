@@ -1,0 +1,12 @@
+.gnb {width:100%;}
+.gnb ul {width:100%;font-size:0;line-height:0;display:flex;flex-wrap:wrap;background-color:#f9f9f9;border-top:1px solid #eee;}
+.gnb ul li {display:inline-block;height:38px;border-right:1px solid #eee;border-bottom:1px solid #eee;text-align:center;overflow:hidden;}
+.gnb ul li a {font-size:13px;line-height:37px;font-weight:500;color:#666;}
+.gnb.grid2 li {width:50%;}
+.gnb.grid2 li:nth-child(2n) {border-right:0;}
+.gnb.grid3 li {width:33.333%;}
+.gnb.grid3 li:nth-child(3n) {border-right:0;}
+.gnb.grid4 li {width:25%;}
+.gnb.grid4 li:nth-child(4n) {border-right:0;}
+.gnb.grid5 li {width:20%;}
+.gnb.grid5 li:nth-child(5n) {border-right:0;}

@@ -1,0 +1,13 @@
+#popup_idio {display:none;width:360px;height:360px;position:fixed;overflow:hidden;z-index:10003;left:0 !important;right:0 !important;top:0 !important;bottom:0 !important;margin:auto !important;padding:10px;}
+#popup_idio.opened {display:block !important;}
+
+#popup_idio .popup_wrapper {width:100%;height:100%;position:relative;border-radius:20px;overflow:hidden;box-shadow:0 4px 9px rgba(0,0,0,0.3);background-color:#fff;}
+
+#popup_idio .footer {position:absolute;width:100%;height:0;top:0;z-index:10000;}
+#popup_idio .footer > * {position:absolute;width:100%;top:17px;}
+#popup_idio .footer #chkday {right:40px;width:17px;height:17px;}
+#popup_idio .footer #popup_btn_close {right:17px;width:15px;height:17px;cursor:pointer;background:url('/_idio/img/popup_close.png') no-repeat center center;}
+
+@media screen and (max-width:410px) {
+	#popup_idio {width:320px;height:320px;}
+}

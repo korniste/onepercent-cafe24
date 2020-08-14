@@ -1,0 +1,54 @@
+/*common*/
+* {font-family:'Nanum Gothic', sans-serif;font-size:11px;line-height:20px;color:#333;margin:0;padding:0;-webkit-box-sizing:border-box;-moz-webkit-box:border-box;box-sizing:border-box;letter-spacing:-0.02em;}
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,img {margin:0;padding:0;}
+html {width:100%;height:100%;}
+body {min-width:1380px;}
+li {list-style:none;}
+img,fieldset {border:none;vertical-align:top;}
+table {width:100%;border:0;border-spacing:0;border-collapse:collapse;}
+caption {display:none;}
+th,td {border:0;vertical-align:top;}
+button {overflow:visible;padding:0;margin:0;border:0;cursor:pointer;outline:0;}
+select, input {padding:0;margin:0;outline:0;}
+a, a:hover, a:active {text-decoration:none;color:#333;}
+
+/*guide*/
+#wrap {position:relative;width:1100px;margin: 0 auto;padding:50px 0 100px;}
+
+.title {width:100%;padding-bottom:40px;}
+.title h2 {font-size:16px;padding-bottom:16px;border-bottom:1px solid #ddd;}
+.title .notice {padding-top:16px;}
+.title .notice li {font-size:11px;line-height:24px;}
+.title .notice li i {color:#999;}
+.title .notice li a {font-size:11px;line-height:24px;color:#333;font-weight:600;}
+.title .notice li .dot {font-size:11px;line-height:24px;color:#cc0000;margin-right:2px;vertical-align:1px;}
+
+.title .warning {background-color:#f7f7f7;padding:15px 20px;margin-top:18px;}
+.title .warning li {font-size:11px;line-height:22px;color:#333;}
+
+.guide {position:relative;width:1100px;margin: 0 auto;font-size:0;font-size:0;line-height:0;}
+.guide span, .guide p, .guide a {display:inline-block;color:#eee;}
+.guide span, .guide p {cursor:default;padding:0;margin:0;}
+.guide a {cursor:pointer;}
+.guide img {width:100%;}
+.guide .cont {position:absolute;width:100%;height:100%;z-index:2;top:0;left:0;}
+.guide .cont > li {position:absolute;margin:auto;}
+.guide .cont > li:before {position:absolute;display:block;width:8px;height:8px;background-color:#cc0000;border-radius:50%;margin:auto;top:0;left:0;bottom:0;right:0;content:"";z-index:-1;}
+.guide .cont > li > div {opacity:0;font-size:0;line-height:0;padding:7px 12px;background:url('') no-repeat center center;border:1px solid rgba(0,0,0,0.85);background-color:rgba(0,0,0,0.8);text-align:center;-webkit-transition:0.2s ease-in-out;-moz-transition:0.2s ease-in-out;-o-transition:0.2s ease-in-out;transition:0.2s ease-in-out;margin:auto;z-index:4;}
+.guide .cont > li > div:hover {opacity:1;}
+.guide .cont strong {font-weight:600;color:#fff;}
+.guide .cont .arr {color:#aaa;padding:0 4px;font-size:12px;vertical-align:1px;}
+.guide .cont .adm {margin-left:4px;}
+.guide .cont .adm i {font-size:11px;color:#aaa;line-height:17px;}
+.guide .cont .ref {font:400 11px/19px 'Dotum', 'Verdana', '굴림' !important;margin-left:5px;color:#5fa5e7;letter-spacing:-0.05em;}
+.guide .cont .loc {font-size:11px;color:#aaa;}
+.guide .cont .cmt {display:block;font:400 11px/18px 'Dotum', 'Verdana', '굴림' !important;color:#aaa;letter-spacing:-0.05em;}
+.guide .cont .cmt span {font-size:12px !important;color:#ccc;line-height:18px;}
+
+.copyright {font-size:11px;color:#aaa;line-height:19px;padding-top:50px;text-align:center;}
+
+#gototop {position:fixed;bottom:18px;right:16px;z-index:103;}
+#gototop > div {display:block;width:33px;height:33px;font-size:15px;cursor:pointer;background-color:rgba(230,230,230,0.5);background-position:center center;background-repeat:no-repeat;margin-top:3px;border-radius:4px;}
+#gototop > div:hover {background-color:rgba(230,230,230,0.75);}
+#gototop .top {background-image:url('/guide/img/gototop_01.png');margin-bottom:4px;}
+#gototop .bottom {background-image:url('/guide/img/gototop_02.png');}

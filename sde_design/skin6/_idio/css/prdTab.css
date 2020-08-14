@@ -1,0 +1,20 @@
+.prdTab {width:100%;padding-top:80px;padding-bottom:100px;background-color:#f3f3f3;}
+
+.prdTab .titArea {width:100%;text-align:center;padding:0 !important;}
+.prdTab .contArea {max-width:1200px;width:100%;margin:0 auto;}
+
+.prdTab .slick-dots {position:relative;bottom:0;width:100%;height:auto;text-align:center;padding:0 0 60px}
+.prdTab .slick-dots li {display:inline-block;width:auto;height:48px;margin:0 22px;background-color:transparent;opacity:0.4;border-radius:0;}
+.prdTab .slick-dots li span {display:inline-block;font-size:26px;font-weight:400;line-height:40px;color:#333;letter-spacing:-.5px;margin-left:-3px;padding-right:1px;}
+.prdTab .slick-dots li span:before {content:"#";color:#777;margin-right:5px;font-size:23px;font-weight:300;}
+.prdTab .slick-dots li.slick-active {opacity:1;border-bottom:1px solid #999;}
+.prdTab .slick-dots li button {font-size:0;line-height:0;}
+
+.prdTab .prd_item {width:30.6% !important;margin:0 4% 0 0 !important;position:relative;}
+.prdTab .prd_item:last-child {margin:0 !important;}
+.prdTab .prd_item .prdImg .prd_tmb a {display:block;border-radius:43%;overflow:hidden;}
+.prdTab .prd_item .prdInfo {padding:25px 5px 0;overflow:hidden;}
+.prdTab .prd_item .prdInfo .prd_name > * {display:none;}
+.prdTab .prd_item .prdInfo .prd_name > a {display:inline-block;text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;white-space:nowrap;word-wrap:normal !important;}
+.prdTab .prd_item .ic_sale {border-radius: 50%;top:10px;right:10px;}
+.prdTab .prd_item .tmb-over {display:none !important;}

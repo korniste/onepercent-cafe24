@@ -1,0 +1,4 @@
+.btnTop {display:none;position:fixed;top:0;bottom:0;right:7px;height:63px;width:31px;margin:auto;z-index:100;border:1px solid #f0f0f0;opacity:0.9;border-radius:4px;overflow:hidden;box-shadow:0 2px 3px rgba(0,0,0,0.1);}
+.gototop > div {display:inline-block;font-size:11px;height:30px;width:100%;text-align:center;line-height:28px;background-color:#fff;cursor:pointer;}
+.gototop > div.top {height:31px;border-bottom:1px solid #e8e8e8;}
+.gototop > div i {color:#999;font-size:11px;line-height:30px;}

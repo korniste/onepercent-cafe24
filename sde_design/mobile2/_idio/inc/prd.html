@@ -1,0 +1,15 @@
+<li>
+	<div class="thumbnail">
+		<a href="{$link_product_detail}"><img src="{$image_medium}" id="{$image_medium_id}" alt="{$seo_alt_tag}"><span module="product_Imagestyle"><span class="prdIcon {$icon_class_name}" style="background-image:url('{$icon_url}');"></span></span></a>
+		<span class="wish">{$list_wish_icon}</span>
+	</div>
+	<div class="description" ec-data-custom="{$product_custom}" ec-data-price="{$product_price}">
+		<strong class="name {$product_name_display|display}"><a href="{$link_product_detail}">{$product_name}</a></strong>
+		<ul module="product_ListItem" class="spec">
+			<li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+			<li class="{$item_display|display}"><strong class="title {$item_title_display|display}">{$item_title} :</strong> {$item_content}</li>
+		</ul>
+		<div class="likeButton {$disp_likeprd_class}"><button type="button">{$disp_likeprd_icon}<strong>{$disp_likeprd_count}</strong></button></div>
+		<p class="icon">{$soldout_icon} {$stock_icon} {$recommend_icon} {$new_icon} {$product_icons} {$pickup_icon} {$benefit_icons}</p>
+	</div>
+</li>

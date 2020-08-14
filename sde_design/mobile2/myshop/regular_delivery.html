@@ -1,0 +1,131 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div id="titleArea">
+    <h2>정기배송 관리</h2>
+    <span module="Layout_MobileAction">
+        <a href="#none" onclick="{$go_back}"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_back.gif" width="33" alt="뒤로가기"></a>
+    </span>
+</div>
+<div class="regularDeliveryPayInfo" module="MyShop_OrderRegularPg">
+    <!--@css(/css/module/myshop/regularDeliveryPayInfo.css)-->
+    <!--@js(/js/module/myshop/regularDeliveryPayInfo.js)-->
+    <h3 class="title">결제카드 정보</h3>
+    <div class="ec-base-box">
+        <div class="information">
+            <h4 class="title">정기배송 결제카드</h4>
+            <p class="status {$unregistCard_display|display}">미등록</p>
+            <p class="status {$registCard_display|display}">등록완료</p>
+        </div>
+        <div class="button">
+            <a href="#" id="{$lookupCardInfoId}" class="btnStrong cardSearch">등록카드 정보조회</a>
+            <a href="#" id="{$registModifyCardId}" class="btnStrong">결제카드 등록/변경</a>
+        </div>
+        <div class="ec-base-tooltip wrap" id="{$registerdCardInfoLayer}">
+            <h3>등록카드 정보조회</h3>
+            <div class="content">
+                <p>결제 업체(PG사) 조회 결과 고객님의<br/>정기배송(결제)을 위해 등록된 카드 정보는 다음과 같습니다.</p>
+                <p class="txtEm" id="{$registedCardNumberId}"></p>
+                <p>※ 위 카드 정보는 PG사에 안전하게 보관되며,<br>이후 배송주기별 결제 시점에 결제를 위한 정보로 사용됩니다.</p>
+            </div>
+            <button type="button" class="close btnClose">닫기</button>
+            <a href="#" class="btnClose close"><img src="//img.echosting.cafe24.com/skin/base/common/btn_close_tip.gif" alt="닫기"></a>
+            <span class="edge"></span>
+        </div>
+    </div>
+    <ul class="ec-base-help">
+        <li class="">결제예정일 (주기별 배송시작일 하루 전)에 위의 카드 정보로 정기배송 상품이 결제됩니다.</li>
+    </ul>
+</div>
+<div class="ec-base-tab gBlank7" module="Myshop_OrderRegularManageHead">
+    <ul>
+        <li class="{$issueListTabSelected}"><a href="#none" id="{$issueListTabId}"><span>신청내역<span class="number">({$issueInvoiceCount}건)</span></span></a></li>
+        <li class="{$cancelListTabSelected}"><a href="#none" id="{$cancelListTabId}" ><span>해지내역<span class="number">({$cancelItemCount}건)</span></span></a></li>
+    </ul>
+</div>
+<div module="myshop_OrderRegularManageList">
+    <!--@css(/css/module/myshop/regularDeliveryListItem.css)-->
+    <div class="orderList {$list_display|display}">
+        <div class="order">
+            <h3 class="{$display_column|display}">
+                <span class="date" title="주문일자">{$ins_timestamp}</span>
+                <span class="number" title="주문번호">({$invoice_no})</span>
+            </h3>
+            <div class="ec-base-prdInfo">
+                <div class="prdBox">
+                    <div class="thumbnail"><a href="/product/detail.html{$param}"><img src="{$product_image}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" width="71" height="71" alt=""></a></div>
+                    <div class="description">
+                        <strong class="prdName" title="상품명">{$product_name_link}</strong>
+                        <ul class="info">
+                            <li>
+                                <span class="price" title="판매가">{$product_price_front_head}<strong>{$product_price_front}</strong>{$product_price_front_tail}<span class="refer {$product_price_ref_display|display}"> {$product_price_back_head}{$product_price_back}{$product_price_back_tail}</span></span>
+                                <span class="ec-base-qty" title="수량"><strong>{$item_qty}</strong>개</span>
+                            </li>
+                            <li>
+                                <span class="txtEm">{$subscription_cycle_count}주에 한 번</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="option {$option_display|display}">{$option_str}</p>
+                <div class="prdFoot" title="주문처리상태">
+                    <div class="gLeft {$issueList_display|display}">
+                        {$expected_pay_date} [{$expected_pay_seq}회차] 결제 예정
+                    </div>
+                    <div class="gRight {$issueList_display|display}">
+                        <a href="#none" class="btnNormal mini  {$cancelScriptionItemClass}" data-cancel_action_json="{$cancel_action_json}"  data-has_temporder="{$temp_order}">신청 해지</a>
+                    </div>
+                    <div class="gLeft {$cancelList_display|display}">
+                        {$cancel_timestamp} 해지 완료
+                        <span class="{$customerCancel_display|display}">(구매자 해지)</span>
+                        <span class="{$systemCancel_display|display}">(시스템 자동 해지)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order">
+            <h3 class="{$display_column|display}">
+                <span class="date" title="주문일자">{$ins_timestamp}</span>
+                <span class="number" title="주문번호">({$invoice_no})</span>
+            </h3>
+            <div class="ec-base-prdInfo">
+                <div class="prdBox">
+                    <div class="thumbnail"><a href="/product/detail.html{$param}"><img src="{$product_image}" onerror="this.src='//img.echosting.cafe24.com/thumb/img_product_small.gif';" width="71" height="71" alt=""></a></div>
+                    <div class="description">
+                        <strong class="prdName" title="상품명">{$product_name_link}</strong>
+                        <ul class="info">
+                            <li>
+                                <span class="price" title="판매가">{$product_price_front_head}<strong>{$product_price_front}</strong>{$product_price_front_tail}<span class="refer {$product_price_ref_display|display}"> {$product_price_back_head}{$product_price_back}{$product_price_back_tail}</span></span>
+                                <span class="ec-base-qty" title="수량"><strong>{$item_qty}</strong>개</span>
+                            </li>
+                            <li>
+                                <span class="txtEm">{$subscription_cycle_count}주에 한 번</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="option {$option_display|display}">{$option_str}</p>
+                <div class="prdFoot" title="주문처리상태">
+                    <div class="gLeft {$issueList_display|display}">
+                        {$expected_pay_date} [{$expected_pay_seq}회차] 결제 예정
+                    </div>
+                    <div class="gRight {$issueList_display|display}">
+                        <a href="#none" class="btnNormal mini  {$cancelScriptionItemClass}" data-cancel_action_json="{$cancel_action_json}"  data-has_temporder="{$temp_order}">신청 해지</a>
+                    </div>
+                    <div class="gLeft {$cancelList_display|display}">
+                        {$cancel_timestamp} 해지 완료
+                        <span class="{$customerCancel_display|display}">(구매자 해지)</span>
+                        <span class="{$systemCancel_display|display}">(시스템 자동 해지)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="empty {$empty_display|display}">신청 내역이 없습니다.</p>
+</div>
+<div class="ec-base-paginate typeList" module="Myshop_OrderRegularManagePage">
+    <a href="{$param_prev}" class="btnPrev">이전 페이지</a>
+    <ol>
+        <li><a href="{$param_page}" >{$page_no}</a></li>
+        <li><a href="{$param_page}" >{$page_no}</a></li>
+    </ol>
+    <a href="{$param_next}" class="btnNext">다음 페이지</a>
+</div>

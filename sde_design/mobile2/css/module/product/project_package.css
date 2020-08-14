@@ -1,0 +1,18 @@
+.xans-project-package .menuCategory {margin:-1px 0 0;padding:0 14px;}
+.xans-project-package .menuCategory .icoOpen {width:13px;cursor:pointer;vertical-align:top;}
+.xans-project-package .menuCategory > li {padding:3px 0;text-align:center;}
+.xans-project-package .menuCategory > li > a {display:inline-block;margin:0 6px;color:#333;font-weight:normal;font-size:13px;vertical-align:top;}
+.xans-project-package .menuCategory > li > a .count {color:#999;}
+.xans-project-package .menuCategory > li > ul {display:inline;}
+.xans-project-package .menuCategory > li > ul > li {position:relative;display:inline-block;padding:0 7px 0 8px;}
+.xans-project-package .menuCategory > li > ul > li:before {display:block;content:"";position:absolute;top:0;left:0;width:1px;height:13px;background:#e8e8e8;}
+.xans-project-package .menuCategory> li > ul > li:first-child:before {display:none;}
+.xans-project-package .menuCategory li.selected > a {color:#555;}
+.xans-project-package .menuCategory > li > ul > li > .button {display:inline-block;position:relative;width:13px;height:12px;}
+.xans-project-package .menuCategory .button.selected {z-index:11;}
+.xans-project-package .menuCategory .button.selected .subCategory {display:block;}
+.xans-project-package .menuCategory li.xans-product-displaysubcategory {display:inline-block;border:0;}
+.xans-project-package .banner {padding:0;}
+.xans-project-package .banner img {max-width:100%;height:auto;margin:20px 0;}
+
+.xans-project-list h3 {margin:0;padding:14px 14px 0;font-size:14px;line-height:15px;color:#333;}

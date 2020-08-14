@@ -1,0 +1,24 @@
+.xans-layout-mobilenavigation {z-index:3;}
+.xans-layout-mobilenavigation ul {display:flex;background-color:#222;}
+.xans-layout-mobilenavigation ul li {position:relative;width:25%;}
+.xans-layout-mobilenavigation ul li:after {display:block;content:"";position:absolute;top:16px;right:0;width:1px;height:8px;background:#555;}
+.xans-layout-mobilenavigation ul li:last-child:after {display:none;}
+.xans-layout-mobilenavigation ul li a {display:block;position:relative;height:40px;font-size:12px;line-height:40px;color:#fff;text-align:center;font-weight:500;}
+.xans-layout-mobilenavigation ul li a .wp {display:block;width:50px;font-size:10px;line-height:21px;font-weight:400;color:#fff;background-color:#444;position:absolute;top:34px;left:50%;margin-left:-25px;border-radius:3px;text-align:center;letter-spacing:0.05em;z-index:4;}
+
+/*wp*/
+.wp {-webkit-animation-duration:4s;animation-duration:4s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
+.wp {-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;}
+.wp {-webkit-animation-name:shake;animation-name:shake;-webkit-transition:all 0.5s;-moz-transition:all 0.5s;-ms-transition:all 0.5s;-o-transition:all 0.5s;transition:all 0.5s;}
+
+@-webkit-keyframes shake {
+	from, to {-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}
+	10%, 30%, 50%, 70%, 90% {-webkit-transform:translate3d(-2px, 0, 0);transform:translate3d(-2px, 0, 0);}
+	20%, 40%, 60%, 80% {-webkit-transform:translate3d(2px, 0, 0);transform:translate3d(2px, 0, 0);}
+}
+
+@keyframes shake {
+	from, to {-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0);}
+	10%, 30%, 50%, 70%, 90% {-webkit-transform:translate3d(-2px, 0, 0);transform:translate3d(-2px, 0, 0);}
+	20%, 40%, 60%, 80% {-webkit-transform:translate3d(2px, 0, 0);transform:translate3d(2px, 0, 0);}
+}

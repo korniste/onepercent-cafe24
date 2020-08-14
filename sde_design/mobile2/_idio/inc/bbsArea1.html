@@ -1,0 +1,42 @@
+<!-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	■ '★기본셋팅' 화면에서 게시판 영역의 타이틀 변경이 가능합니다.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--@css(/_idio/css/bbsArea1.css)-->
+
+<div class="bbsArea1">
+	<div class="main_tit inner">
+		<h2 class="tit bbsArea1-tit"></h2>
+		<h3 class="copy bbsArea1-copy"></h3>
+	</div>
+	<div module="board_listpackage_8">
+		<ul module="board_list_8" class="div">
+			<!--
+				$count = 4
+				$main_list = yes
+				$subject_cut = 80
+				$main_list_reply_view = no
+			-->
+            <li>
+                <a href="{$link_board_detail}" class="imgLink mov03" style="background-image:url('/file_data/{$member_id}/{$real_filename}');"></a>
+                {$checkbox}
+				<div class="info">
+					<div class="cate {$category_display|display}">{$category_name}</div>
+					<div class="subject"><a href="{$link_board_detail}">{$subject}</a><span class="txtEm">{$comment_count}</span></div>
+				</div>
+            </li>
+            <li>
+                <a href="{$link_board_detail}" class="imgLink mov03" style="background-image:url('/file_data/{$member_id}/{$real_filename}');"></a>
+                {$checkbox}
+				<div class="info">
+					<div class="cate {$category_display|display}">{$category_name}</div>
+					<div class="subject"><a href="{$link_board_detail}">{$subject}</a><span class="txtEm">{$comment_count}</span></div>
+				</div>
+            </li>
+		</ul>
+	</div>	
+	<a href="/board/free/list.html?board_no=1" class="more disnone">VIEW MORE</a>
+</div>

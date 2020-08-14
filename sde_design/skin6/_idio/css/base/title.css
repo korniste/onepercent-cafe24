@@ -1,0 +1,29 @@
+/*타이틀*/
+.titleArea h2,
+.titleArea h2 font,
+.titleArea h2,
+.xans-product-menupackage .title h2 {font-size:34px;line-height:42px;height:50px;font-weight:300;}
+
+/*서브문구*/
+.titArea h3,
+.titleArea ul li,
+.titleArea p {font-size:17px;line-height:1.7;font-weight:400;color:#999;}
+
+/*기타스타일*/
+.titArea {width:100%;padding:80px 0 25px;text-align:center;}
+.titArea h2 {position:relative;font-weight:300;font-size:38px;line-height:54px;letter-spacing:-.5px;padding-bottom:34px;}
+.titArea h2:after {position:absolute;left:0;right:0;margin:auto;bottom:21px;display:block;content:'';width:14px;height:1px;background-color:#333;}
+.titArea h3 {padding:0 0 11px;}
+
+.xans-product-menupackage .title,
+.titleArea {padding:50px 0 40px !important;border-bottom:0 !important;text-align:center;}
+.titleArea h2,
+.titleArea h2 font,
+.titleArea h2 {background:none !important;padding:0 !important;}
+.titleArea ul {width:700px;margin:0 auto;margin-top:20px;background-color:#f7f7f7;padding:20px 25px;border-radius:15px;}
+.titleArea ul li {font-size:15px;font-weight:500;color:#aaa;}
+
+.sub_tit {width:100%;text-align:center;padding:70px 0 0;}
+.sub_tit h2 {font-size:26px;line-height:34px;font-weight:300;position:relative;padding-bottom:20px;color:#333;}
+.sub_tit h2:after {display:block;content:'';margin:30px auto;width:14px;height:1px;background-color:#aaa;}
+

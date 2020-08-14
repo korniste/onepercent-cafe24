@@ -1,0 +1,37 @@
+<div module="coupon_productdetailajax">
+    <!--
+        $coupon_down_result_url = /coupon/coupon_down_result.html
+    -->
+    <!--@css(/css/module/coupon/productDetailAjax.css)-->
+    <div class="couponSkinArea">
+        <!--
+            진열 방식에따라 아래의 ul class 변경
+            1열 : ul class="grid1"
+            2열 : ul class="grid2"
+            3열 : ul class="grid3"
+        -->
+        <ul class="div">
+            <li>
+                <div class="coupon {$background_class}" style="background-image:url('{$background_url}')">
+                    <div class="detail" {$call_coupon_detail}>
+                        <p class="title">{$coupon_name|cut:13,...}</p>
+                        <p class="discount">{$coupon_content}</p>
+                        <p class="period">{$coupon_period}</p>
+                    </div>
+                    <div class="button"><a href="{$coupon_issue_url}"><img src="{$download_url}" alt="다운받기" /></a></div>
+                </div>
+            </li>
+            <li>
+                <div class="coupon {$background_class}" style="background-image:url('{$background_url}')">
+                    <div class="detail" {$call_coupon_detail}>
+                        <p class="title">{$coupon_name|cut:13,...}</p>
+                        <p class="discount">{$coupon_content}</p>
+                        <p class="period">{$coupon_period}</p>
+                    </div>
+                    <div class="button"><a href="{$coupon_issue_url}"><img src="{$download_url}" alt="다운받기" /></a></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+	<p class="btn_all_coupondown"><a href="#none" id="btn_all_coupondown" class="btnSubmit sizeS">전체쿠폰 다운받기</a></p>
+</div>

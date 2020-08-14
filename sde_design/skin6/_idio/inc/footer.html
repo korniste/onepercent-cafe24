@@ -1,0 +1,48 @@
+<!--@css(/_idio/css/footer.css)-->
+
+<div id="footer">
+	<div class="inner">
+		<div class="top div">
+			<a href="/index.html">홈</a>
+			<a href="/shopinfo/company.html">회사소개</a>
+			<a href="/member/agreement.html">이용약관</a>
+			<a href="/member/privacy.html"><strong>개인정보처리방침</strong></a>
+			<a href="/shopinfo/guide.html">이용안내</a>
+			<div class="follow div">
+				<a class="follow-1" target="_blank"></a>
+				<a class="follow-2" target="_blank"></a>
+				<a class="follow-3" target="_blank"></a>
+				<a class="follow-4" target="_blank"></a>
+				<a class="follow-5" target="_blank"></a>
+			</div>
+		</div>
+		<div class="middle div">
+			<div class="logo"><img src="/_images/ft_logo.png"></div>		
+			<div class="csInfo" module="Layout_footer">
+				<p class="tit">CUSTOMER CENTER</p>
+				<p class="tel"><i class="fas fa-phone"></i>{$phone}</p>
+			</div>
+			<div class="cstime">
+				<span class="cstime-1"></span>
+				<span class="cstime-2"></span>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="company">
+				<ul module="Layout_footer">
+					<li><span>상호명</span>{$mall_name}</li>
+					<li><span>대표자</span>{$president_name}</li>
+					<li><span>사업자등록번호</span>{$company_regno}</li>
+					<li><span>통신판매업신고번호</span>{$network_regno} {$biz_no_link}</li>
+					<li><span>고객센터</span>{$phone}</li>
+					<li><span>주소</span>{$mall_zipcode} {$mall_addr1} {$mall_addr2}</li>
+					<li><span>개인정보보호책임자</span><a href="mailto:{$cpo_email}">{$cpo_name}({$cpo_email})</a></li>
+					<p class="warning">※ {$mall_name}에서 제공하는 모든 컨텐츠는 저작권법에 보호받는 저작물로서, 무단으로 복제, 배포하는 경우에는 저작권법에 의하여 처벌을 받을 수 있습니다.</p>
+				</ul>
+			</div>
+			<div class="copy">
+				<p module="Layout_footer">Copyright © 2020 {$mall_name}. All rights reserved.</p>
+			</div>
+		</div>
+	</div>
+</div>

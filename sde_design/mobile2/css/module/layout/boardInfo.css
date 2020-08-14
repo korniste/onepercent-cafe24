@@ -1,0 +1,12 @@
+.xans-board-mainpackage {margin:0 14px 14px;border:1px solid #e8e8e8;border-bottom:none;}
+.xans-board-mainpackage a {display:block;padding:12px 35px;line-height:17px;color:#333;background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/board/btn_more_board.png") no-repeat scroll 97% 50%;background-size:6px auto;}
+.xans-board-mainpackage li {border-bottom:1px solid #e8e8e8;}
+
+/* 게시판 메인 (일반) */
+.xans-board-mainpackage div.xans-layout-boardinfo li {background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/board/ico_borad.png") no-repeat 14px 50%;background-size:10px auto;}
+
+/* 게시판 메인 (운영일지) */
+.xans-board-mainpackage div.xans-layout-opdiarybanner li {background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/board/ico_opdiary.png") no-repeat 14px 50%;background-size:12px 13px;}
+
+/* 게시판 메인 (긴급문의) */
+.xans-board-mainpackage div.xans-layout-sosbanner li {background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/board/ico_urgency.png") no-repeat 14px 50%;background-size:12px 13px;}

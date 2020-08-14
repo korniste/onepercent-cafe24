@@ -1,0 +1,8 @@
+.sub1 {position:relative;text-align:center;}
+.sub1 .inner > * {}
+.sub1 h2 {font-size:20px;line-height:32px;font-weight:400;color:#999;letter-spacing:-0.05em;margin-bottom:17px;}
+.sub1 h3 {font-size:47px;line-height:57px;color:#333;font-weight:300;margin-bottom:22px;letter-spacing:-0.05em;}
+.sub1 h4 {font-size:34px;font-weight:300;line-height:65px;color:#333;}
+.sub1 p {font-size:17px;line-height:31px;font-weight:400;color:#999;}
+.sub1 img {margin:auto;}
+.sub1 p, .sub1 img {margin-bottom:60px;}

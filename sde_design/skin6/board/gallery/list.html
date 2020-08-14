@@ -1,0 +1,142 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div module="Board_ListPackage_8">
+    <!--@css(/css/module/board/listPackage_gallary.css)-->
+    <div module="board_title_8">
+        <div class="path">
+            <span>현재 위치</span>
+            <ol>
+                <li><a href="/">홈</a></li>
+                <li><a href="/board/index.html">게시판</a></li>
+                <li title="현재 위치"><strong>{$board_name}</strong></li>
+            </ol>
+        </div>
+
+        <div class="titleArea">
+            <h2>{$board_title} {$board_adult_icon}</h2>
+            <p>{$board_info}</p>
+        </div>
+        <p class="imgArea">{$board_top_image}</p>
+    </div>
+
+    <div class="boardSort">
+        <span module="board_category_8">{$form.board_category}</span>
+    </div>
+
+    <ul module="board_listheader_8" class="disnone">
+        <li><a class="btnNormal {$list_type_display|display}" href="/board/gallery/list.html{$param_list}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_icon_type_image.gif" alt="" /> 이미지형</a></li>
+        <li><a class="btnNormal {$list_type_display|display}" href="/board/gallery/list2.html{$param_list}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_icon_type_list.gif" alt="" /> 리스트형</a></li>
+    </ul>
+
+    <div class="notice">
+        <div module="board_notice_8" class="board_notice">
+            <!--
+                $login_page_url = /member/login.html
+                $deny_access_url = /index.html
+            -->
+            <ul>
+				<li>{$icon_re}{$checkbox}{$notice_icon}<a href="{$link_board_detail}" style="{$link_color}">{$subject}</a>{$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="txtEm">{$comment_count}</span><span class="txtSm">{$write_date}</span></li>
+				<li>{$icon_re}{$checkbox}{$notice_icon}<a href="{$link_board_detail}" style="{$link_color}">{$subject}</a>{$icon_lock}{$icon_new}{$icon_hit}{$icon_file}<span class="txtEm">{$comment_count}</span><span class="txtSm">{$write_date}</span></li>
+            </ul>
+        </div>
+        <div module="board_fixed_8" class="board_list">
+            <!--
+                $login_page_url = /member/login.html
+                $deny_access_url = /index.html
+            -->
+            <ul>
+				<li>
+					<a href="{$link_board_detail}" class="imgLink mov03" style="background-image:url('/file_data/{$member_id}/{$real_filename}');"></a>
+					{$checkbox}
+					<div class="info">
+						<div class="cate {$category_display|display}">{$category_name}</div>
+						<div class="subject"><a href="{$link_board_detail}">{$fixed_icon}{$subject}</a><span class="txtEm">{$comment_count}</span></div>
+						<div class="name"><span class="wrt">{$writer}</span><span class="date {$date_display|display}">{$write_date}</span></div>
+					</div>
+				</li>
+				<li>
+					<a href="{$link_board_detail}" class="imgLink mov03" style="background-image:url('/file_data/{$member_id}/{$real_filename}');"></a>
+					{$checkbox}
+					<div class="info">
+						<div class="cate {$category_display|display}">{$category_name}</div>
+						<div class="subject"><a href="{$link_board_detail}">{$fixed_icon}{$subject}</a><span class="txtEm">{$comment_count}</span></div>
+						<div class="name"><span class="wrt">{$writer}</span><span class="date {$date_display|display}">{$write_date}</span></div>
+					</div>
+				</li>
+            </ul>
+        </div>
+    </div>
+
+    <div module="board_list_8" class="board_list">
+        <!--
+            $count = 12
+            $login_page_url = /member/login.html
+            $deny_access_url = /index.html
+        -->
+        <ul>
+            <li>
+                <a href="{$link_board_detail}" class="imgLink mov03" style="background-image:url('/file_data/{$member_id}/{$real_filename}');"></a>
+                {$checkbox}
+				<div class="info">
+					<div class="cate {$category_display|display}">{$category_name}</div>
+					<div class="subject"><a href="{$link_board_detail}">{$subject}</a><span class="txtEm">{$comment_count}</span></div>
+					<div class="name"><span class="wrt">{$writer}</span><span class="date {$date_display|display}">{$write_date}</span></div>
+				</div>
+            </li>
+            <li>
+                <a href="{$link_board_detail}" class="imgLink mov03" style="background-image:url('/file_data/{$member_id}/{$real_filename}');"></a>
+                {$checkbox}
+				<div class="info">
+					<div class="cate {$category_display|display}">{$category_name}</div>
+					<div class="subject"><a href="{$link_board_detail}">{$subject}</a><span class="txtEm">{$comment_count}</span></div>
+					<div class="name"><span class="wrt">{$writer}</span><span class="date {$date_display|display}">{$write_date}</span></div>
+				</div>
+            </li>
+        </ul>
+    </div>
+    <div class="boardListEmpty {$empty_display|display}" module="board_empty_8">
+        <p>{$empty_message}</p>
+    </div>
+
+    <div module="board_ButtonList_8" class="{$write_display|display} ec-base-button">
+        <span class="gRight">
+            <a href="/board/gallery/write.html{$param_write}" class="btnSubmitFix sizeS {$write_display|display}">글쓰기</a>
+        </span>
+    </div>
+</div>
+
+<div module="board_paging_8" class="ec-base-paginate">
+    <a href="{$param_prev}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_prev.gif" alt="이전 페이지" /></a>
+    <ol>
+        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+        <li><a href="{$param_num}" class="{$param_class}">{$page_num}</a></li>
+    </ol>
+    <a href="{$param_next}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_page_next.gif" alt="다음 페이지" /></a>
+</div>
+
+<div module="board_search_8">
+    <!--@css(/css/module/board/search.css)-->
+    <fieldset class="boardSearch">
+        <legend>게시물 검색</legend>
+        <p>{$form.search_date} {$form.search_key} {$form.search} <a href="#none" class="btnSubmit btnSch" onclick="{$action_search}">검색</a></p>
+    </fieldset>
+</div>
+
+<!-- 관리자 전용 메뉴 -->
+<div module="board_catemove_8">
+    <!--@css(/css/module/board/catemove.css)-->
+    <p>
+        {$board_catemove_selectbox}
+        <a href="#none" class="btnNormal" onclick="{$action_category_move}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_icon_move.gif" alt="" /> {$category_move}</a>
+    </p>
+</div>
+
+<div module="board_function_8">
+    <!--@css(/css/module/board/function.css)-->
+    <p>
+        {$board_function_selectbox}
+        <a href="#none" class="btnNormal" onclick="{$action_article_move}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_icon_move.gif" alt="" /> {$article_move}</a>
+        <a href="#none" class="btnNormal" onclick="{$action_article_copy}"><img src="//img.echosting.cafe24.com/skin/base/common/btn_icon_copy.gif" alt="" /> {$article_copy}</a>
+        {$board_function_help}
+    </p>
+</div>
+<!-- // 관리자 전용 메뉴 -->

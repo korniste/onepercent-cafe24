@@ -1,0 +1,41 @@
+<!--@layout(/layout/basic/layout.html)-->
+<div id="titleArea" module="search_form">
+    <!--@css(/css/module/search/form.css)-->
+    <!--@js(/js/module/search/form.js)-->
+    <h2>검색결과(<span class="count">{$total_count}</span>)건</h2>
+    <span module="Layout_MobileAction">
+        <a href="#none" onclick="{$go_back}"><img src="//img.echosting.cafe24.com/skin/mobile_ko_KR/layout/btn_back.gif" width="33" alt="뒤로가기"></a>
+    </span>
+
+    <div class="searchbox">
+        {$form.keyword}
+        <p class="button"><button type="submit" class="btnStrong">검색</button></p>
+        <button type="button" class="btnDelete">삭제</button>
+    </div>
+
+    <div class="inner">
+        {$form.order_by}
+    </div>
+
+    <p class="empty {$search_fail_display|display}">검색 결과가 없습니다.</p>
+</div>
+
+<div module="Search_Result" class="ec-base-product typeThumb">
+    <!--@js(/js/module/search/result.js)-->
+    <!--
+        $count = 10
+    -->
+    <ul class="prdList grid2">
+        <!--@import(/_idio/inc/prd_sch.html)-->
+        <!--@import(/_idio/inc/prd_sch.html)-->
+    </ul>
+</div>
+
+<div module="search_paging" class="ec-base-paginate typeList">
+    <a href="{$param_before}" class="btnPrev">이전 페이지</a>
+    <ol>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+        <li><a href="{$param}" class="{$param_class}">{$no}</a></li>
+    </ol>
+    <a href="{$param_next}" class="btnNext">다음 페이지</a>
+</div>

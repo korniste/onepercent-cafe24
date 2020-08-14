@@ -1,0 +1,45 @@
+#footer {width:100%;word-break:keep-all;color:#333;background-color:#f7f7f7;padding:50px 0 80px;}
+
+#footer .top {text-align:left;position:relative;}
+#footer .top a {display:block;font-size:15px;line-height:100px;font-weight:400;margin-right:17px;color:#999;}
+#footer .top a strong {font-weight:400;color:#333;}
+
+#footer .middle {padding-top:50px;position:relative;}
+
+#footer .bottom {padding-top:20px;}
+
+#footer .logo img {width:auto;height:50px;}
+
+#footer .follow {width:70px;height:18px;position:absolute;top:0;bottom:0;margin:auto;right:0;font-size:0;opacity:0.5;text-align:right;}
+#footer .follow a {width:18px;height:18px;margin-right:5px;background-position:center center;background-size:cover;}
+#footer .follow a:hover {opacity:0.4;}
+#footer .follow a.follow-1 {background-image:url('/_idio/img/csInfo_ic_01.png');}
+#footer .follow a.follow-2 {background-image:url('/_idio/img/csInfo_ic_02.png');}
+#footer .follow a.follow-3 {background-image:url('/_idio/img/csInfo_ic_03.png');}
+#footer .follow a.follow-4 {background-image:url('/_idio/img/csInfo_ic_04.png');}
+#footer .follow a.follow-5 {background-image:url('/_idio/img/csInfo_ic_05.png');}
+
+#footer .csBox {display:flex;}
+#footer .csBox > li {padding-right:30px;}
+#footer .csBox > li:last-child {padding-right:0;}
+#footer .csBox > li:nth-child(1) {width:75%;}
+#footer .csBox > li:nth-child(2) {width:25%;}
+
+#footer .csInfo {padding-left:40px;}
+#footer .csInfo > * {display:inline-block;vertical-align:middle;}
+#footer .csInfo .tit {font-size:10px;font-weight:600;line-height:20px;letter-spacing:0.05em;color:#999;background-color:#e8e8e8;padding:0 8px;border-radius:4px;margin-right:12px;}
+#footer .csInfo .tel {font-size:18px;font-weight:400;letter-spacing:0;color:#555;line-height:50px;}
+#footer .csInfo .tel i {font-size:14px;color:#ccc;margin-right:3px;}
+#footer .csInfo .tel:after {display:inline-block;content:'';background-color:#ddd;width:1px;height:10px;margin:0 11px;}
+
+#footer .cstime span {font-size:14.5px;line-height:1.7;color:#888;line-height:50px;margin-right:5px;}
+
+#footer .company {font-size:16px;line-height:24px;word-break:break-word;border-bottom:1px solid #ddd;padding-bottom:60px;}
+#footer .company a {color:#333 !important;}
+#footer .company li {display:inline-block;margin-right:14px;white-space:nowrap;}
+#footer .company span {font-size:16px;color:#aaa;}
+#footer .company span:after {display:inline-block;content:'';background-color:#ccc;width:1px;height:8px;margin:0 8px;vertical-align:0px;-webkit-transform: rotate(20deg);transform: rotate(20deg);}
+#footer .company .warning {font-size:16px;color:#333;margin-top:6px;}
+
+#footer .copy {margin-top:30px;}
+#footer .copy p {display:block;color:#666;line-height:80px;text-align:left;font-size:12px;letter-spacing:0;background:url('/_idio/img/copyArea_bg.png') no-repeat center right;}
