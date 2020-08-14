@@ -1,0 +1,4 @@
+- sde_design/skin5 - murmure 스킨 (Prod)
+- sde_design/skin6 - murmure 스킨 (Dev)
+- sde_design/mobile1 - murmure mobile skin (Prod)
+- sde_design/mobile2 - murmure mobile skin (Dev)
