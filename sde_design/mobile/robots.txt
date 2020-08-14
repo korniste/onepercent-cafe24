@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /admin
+Disallow: /api
+Allow: /
+DaumWebMasterTool:dba3dae19af4103554b91e2d965e4ecd0a10df0b6c627fcf760249bdba16d22e:kI/j+sdLFYzdjqm5/9wc2w==

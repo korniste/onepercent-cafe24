@@ -66,10 +66,6 @@
 
 /* 약관 */
 .xans-member-edit .agreeArea { margin:0 0 7px; border:1px solid #ccc; background:#fff; }
-.xans-member-edit .agreeArea .title{display:flex;line-height: 1.5;align-items: center;justify-content: space-between;}
-.xans-member-edit .agreeArea .title h4{padding:8px 0 8px 14px}
-.xans-member-edit .agreeArea .title h4 input + label + label {margin-left: 4px;}
-.xans-member-edit .agreeArea .title a.btnMore{ position: relative;top:auto; right: auto; flex:none;padding:0 14px 0 7px; }
 .xans-member-edit .title { position:relative; line-height:36px; color:#333; border-bottom:1px solid #ccc; }
 .xans-member-edit .title h4 { padding:0 0 0 14px; font-size:13px; font-weight:normal; }
 .xans-member-edit .title h4 label { display:none; }

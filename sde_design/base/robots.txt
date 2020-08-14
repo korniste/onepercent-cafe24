@@ -2,3 +2,4 @@ User-agent: *
 Disallow: /admin
 Disallow: /api
 Allow: /
+DaumWebMasterTool:2031f5350121d0a7e8e63c0d30c51be8797ba565e2c53dc21d47b9193f943192:kI/j+sdLFYzdjqm5/9wc2w==
