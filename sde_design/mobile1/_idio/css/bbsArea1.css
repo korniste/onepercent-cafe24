@@ -1,0 +1,27 @@
+.bbsArea1 {width:100%;text-align:center;}
+.bbsArea1 ul {display:block;width:100%;text-align:center;margin-bottom:25px;padding:0 5px;}
+.bbsArea1 li {padding:5px;}
+.bbsArea1 a.more {display:block;margin:0 auto;width:180px;font-size:11px;font-weight:600;line-height:50px;letter-spacing:0.02em;color:#777;background-color:#eee;border-radius:50px;}
+.bbsArea1 .boardChk {display:none !important;}
+.bbsArea1 li .imgLink {display:block;width:100%;padding-bottom:125%;background-position:center center;background-size:cover;}
+.bbsArea1 li:hover .imgLink {opacity:0.8;}
+.bbsArea1 li .boardChk {position:absolute;top:10px;left:10px;z-index:3;display:block;}
+.bbsArea1 li .info {padding:12px 10px;text-align:center;}
+.bbsArea1 li .info * {line-height:1.7;vertical-align:middle;}
+.bbsArea1 li .cate {font-size:13px;color:#aaa;}
+.bbsArea1 li .subject {font-size:14px;line-height:1.7;margin-top:2px;}
+.bbsArea1 li .subject a {margin:0;}
+.bbsArea1 li .cont {margin-top:6px;height:95px;overflow:hidden;}
+.bbsArea1 li .cont * {font-size:12px !important;color:#777 !important;line-height:1.7 !important;}
+.bbsArea1 li .name span {font-size:12px;display:inline-block;position:relative;color:#999;}
+.bbsArea1 li .name span:before {display:inline-block;content:"";width:1px;height:7px;background:#ddd;margin:0 7px;}
+.bbsArea1 li .name span:first-child:before {display:none;}
+
+
+@media all and (max-width:680px) {
+	.bbsArea1 li {width:50%;}
+}
+
+@media all and (min-width:681px) {
+	.bbsArea1 li {width:25%;}
+}

@@ -1,0 +1,41 @@
+<div module="photoreview_display" class="photoreview skin_grid3">
+	<a href="#prdReview" class="btnEm sizeS"><i class="fas fa-chevron-down"></i>상품 리뷰 모두 보기</a>
+	<!--@css(./list.css)-->
+	<!--@js(./list.js)-->
+	<!--
+		$point=show
+		$board_no=4
+	 -->
+	<select class="photoreview-outputNumber disnone">
+		<option value=10>10개씩 보기</option>
+		<option value=20>20개씩 보기</option>
+		<option value=30>30개씩 보기</option>
+		<option value=50>50개씩 보기</option>
+	</select>
+	<select class="photoreview-viewMode disnone">
+		<option value="img">포토 리뷰만 보기</option>
+		<option value="text">텍스트 리뷰만 보기</option>
+		<option value="all">모든 리뷰 보기</option>
+	</select>
+	<table class="prv_table">
+		<tbody>
+			<tr id="preview{$no}" class="rv_list">
+				<td class="rating"><img src="http://shop1.untapped.cafe24.com/img/ico_point_{$rpoint}.png" alt="{$rpoint} Point" /></td>
+				<td class="subject"><a class="preview_detail" href="{$no}">{$rsub}</a></td>
+				<td class="cont"><a class="preview_detail" href="{$no}">{$rcontent}</a></td>
+				<td class="info"><span class="writer">{$rname}</span><span class="date">{$rdate}</span></a></td>
+				<td class="img" style="background-image:url({$rimg})"><a class="preview_detail" href="{$no}"></a></td>
+			</tr>
+			<tr id="preview{$no}" class="rv_list">
+				<td class="rating"><img src="http://shop1.untapped.cafe24.com/img/ico_point_{$rpoint}.png" alt="{$rpoint} Point" /></td>
+				<td class="subject"><a class="preview_detail" href="{$no}">{$rsub}</a></td>
+				<td class="cont"><a class="preview_detail" href="{$no}">{$rcontent}</a></td>
+				<td class="info"><span class="writer">{$rname}</span><span class="date">{$rdate}</span></a></td>
+				<td class="img" style="background-image:url({$rimg})"><a class="preview_detail" href="{$no}"></a></td>
+			</tr>
+		</tbody>
+	</table>
+		<div class="photoreview-paging">
+			{$page}
+		</div>
+</div>

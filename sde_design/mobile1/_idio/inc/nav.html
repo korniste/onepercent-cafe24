@@ -1,0 +1,56 @@
+<!--@css(/_idio/css/nav.css)-->
+<!--@js(/_idio/js/nav.js)-->
+
+<div class="nav">	
+	<div class="nav_wrapper sb">
+	
+		<div id="menu">
+			<ul>
+				<li class="d1 pre">
+					<a href="/_idio/inc/sub1.html" class="open"><span module="Layout_footer">{$mall_name}</span></a>
+					<ul class="d2Box">
+						<li class="d2"><a href="/_idio/inc/sub1.html">브랜드 소개</a></li>
+						<li class="d2"><a href="/_idio/inc/sub2.html">오시는 길</a></li>
+					</ul>
+				</li>
+				<li id="gnb" module="Layout_category">
+					<ul class="d1Box">
+						<li data-param="{$param}" class="d1"><a class="open" href="/product/list_thumb.html{$param}">{$name|cut 25}</a></li>
+						<li data-param="{$param}" class="d1"><a class="open" href="/product/list_thumb.html{$param}">{$name|cut 25}</a></li>
+					</ul>
+				</li>
+				<li class="d1 pre">
+					<a class="open"><span>커뮤니티</span></a>
+					<ul class="d2Box" module="Layout_BoardInfo">
+						<li class="d2"><a href="{$link_board_list}">{$board_name}</a></li>
+						<li class="d2"><a href="{$link_board_list}">{$board_name}</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>			
+		<ul class="util" module="Layout_statelogoff">
+			<li><a href="/member/login.html">로그인</a></li>
+			<li><a href="/member/join.html">회원가입</a></li>
+			<li><a href="/order/basket.html">장바구니</a></li>
+			<li><a href="/myshop/order/list.html">주문조회</a></li>
+			<li><a href="/myshop/index.html">마이페이지</a></li>
+		</ul>		
+		<ul class="util" module="Layout_stateLogon">
+			<li><a href="/order/basket.html">장바구니</a></li>
+			<li><a href="/myshop/order/list.html">주문조회</a></li>
+			<li><a href="{$action_logout}">로그아웃</a></li>
+			<li><a href="/myshop/index.html">마이페이지</a></li>
+		</ul>
+		<div class="follow div">
+			<a class="follow-1" target="_blank"></a>
+			<a class="follow-2" target="_blank"></a>
+			<a class="follow-3" target="_blank"></a>
+			<a class="follow-4" target="_blank"></a>
+			<a class="follow-5" target="_blank"></a>
+		</div>
+		<div class="copyright" module="Layout_footer">Copyright(C) {$mall_name}</div>	
+		
+	</div>
+</div>
+
+<div class="nav_cover"></div>

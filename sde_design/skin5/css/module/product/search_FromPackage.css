@@ -1,0 +1,11 @@
+#popup {width:600px;height:400px;}
+.xans-search-frompackage fieldset {text-align:center;}
+.xans-search-frompackage button {height:36px;}
+.xans-search-frompackage #search_type {width:120px;}
+.xans-search-frompackage #keyword {width:240px;}
+
+.xans-search-frompackage .resultArea {overflow:hidden;margin:10px 0 0;padding:10px 0;text-align:right;line-height:24px;}
+.xans-search-frompackage .total {float:left;color:#333;}
+.xans-search-frompackage .limit select {width:100px;}
+
+.xans-search-frompackage table td.thumb img {max-width:78px;}

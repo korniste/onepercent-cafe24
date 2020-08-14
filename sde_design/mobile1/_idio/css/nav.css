@@ -1,0 +1,50 @@
+.nav {position:fixed;top:0;left:0;height:100vh;z-index:10005;opacity:0;left:-290px;width:290px;max-width:70%;transform:translateX(-290px);transition:all 0.5s ease;}
+.nav.opened {background-color:#fff;opacity:1;transform:translateX(0);box-shadow:3px 0 5px rgba(100,100,100,0.3);left:0;}
+
+.nav_cover {display:none;background-color:rgba(10,10,10,0.4);width:100%;height:100vh;position:fixed;top:0;left:0;z-index:10004;transition:all 0.5s ease;}
+.nav_cover.on {display:block;}
+
+.nav .nav_wrapper {padding:45px;height:100%;overflow-y:auto;}
+
+.nav #menu ul,
+.nav #menu li {width:100%;}
+.nav #menu a {display:block;text-align:left;transition:all 0.3s ease;position:relative;cursor:pointer;line-height:27px;}
+
+.nav #menu .arr {position:absolute;top:0;width:35px;text-align:right;padding-right:10px;right:-8px;cursor:pointer;}
+.nav #menu .arr i {font-size:13px;line-height:27px;}
+.nav #menu .arr i.fa-chevron-up {color:#333;}
+.nav #menu .arr i.fa-chevron-down {color:#999;}
+.nav #menu .comm .arr {width:100%;}
+
+.nav #menu .d1 {padding-bottom:9px;position:relative;}
+.nav #menu .d1 > a {font-size:17px;font-weight:400;}
+.nav #menu .d1 .arr {display:none;}
+.nav #menu .d1.pre .arr {display:block;}
+
+.nav #menu .d2Box {display:none;padding:3px 0 4px;}
+.nav #menu li.pre.open .d2Box {display:block;}
+.nav #menu .d2 {position:relative;}
+.nav #menu .d2 > a {font-size:14px;padding-left:13px;opacity:0.8;}
+
+.nav #menu .d3Box {display:none;}
+.nav #menu li.pre.open>.d3Box {display:block;}
+.nav #menu .d3 {position:relative;}
+.nav #menu .d3 > a {font-size:14px;padding-left:26px;opacity:0.8;}
+
+.nav #menu li > .arr .fa-chevron-up {display:none;}
+.nav #menu li.open-li > .arr .fa-chevron-up {display:block;}
+.nav #menu li.open-li > .arr .fa-chevron-down {display:none;}
+
+.nav .util {margin-top:20px;}
+.nav .util li a {font-size:14px;line-height:28px;}
+ 
+.nav .follow {width:100%;font-size:0;margin-top:24px;}
+.nav .follow a {width:16px;height:16px;margin-right:4px;background-position:center center;background-size:cover;}
+.nav .follow a:hover {opacity:0.4;}
+.nav .follow a.follow-1 {background-image:url('/_idio/img/csInfo_ic_01.png');}
+.nav .follow a.follow-2 {background-image:url('/_idio/img/csInfo_ic_02.png');}
+.nav .follow a.follow-3 {background-image:url('/_idio/img/csInfo_ic_03.png');}
+.nav .follow a.follow-4 {background-image:url('/_idio/img/csInfo_ic_04.png');}
+.nav .follow a.follow-5 {background-image:url('/_idio/img/csInfo_ic_05.png');}
+
+.nav .copyright {font-size:12px;line-height:19px;color:#888;font-weight:600;letter-spacing:0;margin-top:24px;}

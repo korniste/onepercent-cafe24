@@ -1,0 +1,87 @@
+<!--@css(/_idio/css/nav.css)-->
+<!--@js(/_idio/js/nav.js)-->
+
+<div class="nav minW fadeInDown">
+
+	<div class="logo div" onclick="location.href='/index.html'">
+		<img src="/_images/nav_logo.png" class="mov03">
+	</div>
+	
+	<div class="stateBox mov03">
+		<a href="/order/basket.html" class="ic_cart">
+			<div module="Layout_statelogoff"><span class="{$basket_count_display|display} {$basket_count_display_class}">{$basket_count}</span></div>
+			<div module="Layout_stateLogon"><span class="{$basket_count_display|display} {$basket_count_display_class}">{$basket_count}</span></div>
+		</a>
+		<a class="ic_my" module="Layout_statelogoff" href="/member/login.html"></a>
+		<a class="ic_my" module="Layout_stateLogon" href="/myshop/index.html"></a>
+		<a class="ic_sch"></a>
+		<a class="btnSubmit gnb-btn elp"></a>
+	</div>
+
+	<div class="gnb_wrap">
+		<div class="gnb">
+			<ul>
+				<li class="d1">
+					<a href="/_idio/inc/sub1.html"><span module="Layout_footer">{$mall_name}</span></a>
+					<ul class="d2Box">
+						<li class="d2"><a href="/_idio/inc/sub1.html"><span>브랜드 소개</span></a></li>
+						<li class="d2"><a href="/_idio/inc/sub2.html"><span>오시는 길</span></a></li>
+					</ul>
+				</li>
+				<li id="gnb" module="Layout_category">
+					<ul class="d1Box">
+						<li data-param="{$param}" class="d1"><a href="/product/list.html{$param}"><span>{$name}</span></a></li>
+						<li data-param="{$param}" class="d1"><a href="/product/list.html{$param}"><span>{$name}</span></a></li>
+					</ul>
+				</li>
+				<li class="d1">
+					<a href="#"><span>커뮤니티</span></a>
+					<ul class="d2Box" module="Layout_BoardInfo">
+						<li class="d2"><a href="{$link_board_list}"><span>{$board_name}</span></a></li>
+						<li class="d2"><a href="{$link_board_list}"><span>{$board_name}</span></a></li>
+					</ul>
+				</li>
+				<li class="d1">
+					<a href="#"><span>마이쇼핑</span></a>
+					<ul class="d2Box" module="Layout_statelogoff">
+						<li class="d2"><a href="/member/login.html"><span>로그인</span></a></li>
+						<li class="d2"><a href="/member/join.html"><span>회원가입</span></a></li>
+						<li class="d2"><a href="/order/basket.html"><span>장바구니</span></a></li>
+						<li class="d2"><a href="/myshop/order/list.html"><span>주문조회</span></a></li>
+						<li class="d2"><a href="/myshop/index.html"><span>마이페이지</span></a></li>
+					</ul>		
+					<ul class="d2Box" module="Layout_stateLogon">
+						<li class="d2"><a href="/order/basket.html"><span>장바구니</span></a></li>
+						<li class="d2"><a href="/myshop/order/list.html"><span>주문조회</span></a></li>
+						<li class="d2"><a href="{$action_logout}"><span>로그아웃</span></a></li>
+						<li class="d2"><a href="/myshop/index.html"><span>마이페이지</span></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>		
+	</div>
+	
+</div>
+	
+<div class="schArea">
+	<div class="sch_cover"></div>
+	<div class="schBox">
+		<div class="schHdr"  module="Layout_SearchHeader" id="{$search_box_id}">
+			<!--
+				$search_page = /product/search.html
+				$product_page = /product/detail.html
+			-->
+			<fieldset class="div">
+				<legend>검색</legend>
+				{$form.keyword}
+				<input class="schBtn" type="image" src="/_idio/img/sch.svg" alt="검색" onclick="{$action_search_submit}" />
+			</fieldset>
+			<div class="bestKeyword" module="search_hotkeyword">
+				<ul class="div">
+					<li><a href="{$hot_keyword_url}">{$hot_keyword_name}</a></li>
+					<li><a href="{$hot_keyword_url}">{$hot_keyword_name}</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

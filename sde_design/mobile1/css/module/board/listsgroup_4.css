@@ -1,0 +1,18 @@
+.xans-board-listsgroup-4 h3 {padding:10px 14px;border-top:1px solid #e8e8e8;background:#f5f5f5;font-size:13px;}
+
+/* 게시글 */
+.xans-board-listsgroup-4 {font-size:13px;background:#fff;}
+.xans-board-listsgroup-4 li {position:relative;overflow:hidden;padding:10px 14px;color:#999;border-top:1px solid #e8e8e8;}
+.xans-board-listsgroup-4 .descriptions {position:relative;}
+.xans-board-listsgroup-4 .descriptions a {display:block;color:#757575;}
+
+.xans-board-listsgroup-4 .descriptions > strong {position:relative;padding:0 5px 0 8px;font-size:13px;font-weight:normal;}
+.xans-board-listsgroup-4 .descriptions > a + strong {padding-left:0;}
+.xans-board-listsgroup-4 .descriptions > strong:before {display:block;content:"";position:absolute;top:3px;left:0;width:1px;height:10px;background:#e8e8e8;}
+.xans-board-listsgroup-4 .descriptions > a + strong:before {display:none;padding-left:0;}
+
+.xans-board-listsgroup-4 .descriptions .name {display:block;margin:1px 0 0;color:#333;font-weight:600;}
+.xans-board-listsgroup-4 .descriptions .point img {width:auto;height:11px;}
+.xans-board-listsgroup-4 a .summary {display:block;margin:0 0 3px;color:#333;font-size:13px;}
+.xans-board-listsgroup-4 a .summary span {color:#555;}
+.xans-board-listsgroup-4 a .summary img {margin:0 4px 0 0;}

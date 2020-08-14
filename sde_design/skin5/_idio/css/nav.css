@@ -1,0 +1,81 @@
+.nav {position:fixed;top:0;left:0;z-index:10002;width:100%;height:100px;transition:all 0.5s ease;}
+.nav.fixed {height:73px;}
+
+
+/* logo */
+.nav .logo {position:absolute;top:0;z-index:2;width:360px;height:100%;left:0;overflow:hidden;padding-left:50px;}
+.nav .logo img {position:absolute;top:0;bottom:0;margin:auto;height:70px;width:auto;cursor:pointer;}
+.nav.fixed .logo img {height:60px;}
+
+
+/* stateBox */
+.nav .stateBox {position:absolute;top:0;bottom:0;margin:auto;z-index:2;width:360px;height:100%;right:0;font-size:0;line-height:0;overflow:hidden;text-align:right;padding-right:50px;}
+.nav .stateBox a[class*='ic_'] {display:inline-block;width:30px;height:100%;cursor:pointer;background-position:center center;background-repeat:no-repeat;position:relative;background-size:100% auto;margin-left:9px;-webkit-transition:0.3s ease-in-out;-moz-transition:0.3s ease-in-out;-o-transition:0.3s ease-in-out;transition:0.3s ease-in-out;vertical-align:middle;}
+.nav.fixed .stateBox a[class*='ic_'] {width:25px;}
+.nav .stateBox .gnb-btn {display:inline-block !important;font-size:12px;vertical-align:middle;padding:0 18px;line-height:32px;border-radius:5px;margin-left:18px;max-width:160px;}
+.nav .stateBox .ic_cart {background-image:url('/_idio/img/cart.svg');}
+.nav .stateBox .ic_cart div {display:block;position:absolute;min-width:17px;text-align:center;background-color:#333;border-radius:50%;top:33px;right:-3px;}
+.nav .stateBox .ic_cart div span {line-height:17px;color:#fff;font-size:12px;font-weight:400;}
+.nav .stateBox .ic_my {background-image:url('/_idio/img/my.svg');}
+.nav .stateBox .ic_sch {background-image:url('/_idio/img/sch.svg');}
+
+
+/* gnb */
+.nav .gnb_wrap {position:absolute;top:0;left:0;right:0;width:100%;height:100px;padding:0 360px;margin:auto;transition:all 0.3s ease;background-color:rgba(255,255,255,0.95);z-index:1;overflow:hidden;}
+.nav.fixed .gnb_wrap {height:73px;box-shadow:0 3px 6px rgba(100,100,100,0.1);}
+.nav .gnb_wrap.opened  {height:400px;box-shadow:0 3px 6px rgba(100,100,100,0.1);}
+.nav .gnb_wrap:before {position:absolute;top:100px;left:0;display:block;content:'';width:100%;height:1px;background-color:#dfdfdf;z-index:4;-webkit-transition:0.3s ease-in-out;-moz-transition:0.3s ease-in-out;-o-transition:0.3s ease-in-out;transition:0.3s ease-in-out;}
+.nav.fixed .gnb_wrap:before {position:absolute;top:73px}
+.nav .gnb {width:100%;height:100%;text-align:center;font-size:0;line-height:0;margin-right:30px;}
+.nav .gnb #gnb {max-width:770px;overflow:hidden;white-space:nowrap;}
+.nav .gnb ul {display:inline-block;text-align:center;font-size:0;line-height:0;height:100%;overflow:hidden;white-space:nowrap;}
+.nav .gnb li {vertical-align:top;text-align:center;}
+.nav .gnb > ul > li {display:inline-block;}
+.nav .gnb a {display:block;text-align:center;font-weight:400;letter-spacing:-.5px;position:relative;cursor:pointer;padding:0 5px;}
+.nav .gnb span {-webkit-transition:0.3s ease-in-out;-moz-transition:0.3s ease-in-out;-o-transition:0.3s ease-in-out;transition:0.3s ease-in-out;}
+.nav .gnb .d1 {display:inline-block;position:relative;width:110px;overflow:hidden;}
+.nav .gnb .d1 > a > span {font-size:19px;line-height:100px;font-weight:600;position:relative;width:100%;white-space:nowrap;}
+.nav.fixed .gnb .d1 > a > span {font-size:17px;line-height:70px;}
+.nav .gnb .d2Box {position:relative;width:100%;padding:20px 0;opacity:0;transform:translateY(-10px);-webkit-transition:0.3s ease-in-out;-moz-transition:0.3s ease-in-out;-o-transition:0.3s ease-in-out;transition:0.3s ease-in-out;}
+.nav .gnb_wrap.opened .gnb .d2Box {opacity:1;transform:translateY(0);}
+.nav .gnb .d2Box:after {position:absolute;top:0;display:block;content:'';width:100%;height:3px;-webkit-transition:0.3s ease-in-out;-moz-transition:0.3s ease-in-out;-o-transition:0.3s ease-in-out;transition:0.3s ease-in-out;z-index:22;opacity:0;}
+.nav .gnb .d1:hover .d2Box:after {opacity:1;}
+.nav .gnb .d2 {padding:2px 0 3px 0;}
+.nav .gnb .d2 > a > span {font-size:15px;line-height:25px;}
+.nav .gnb .d2 > a > span:hover {font-weight:500;}
+
+@media screen and (max-width:1480px) {
+	.nav .stateBox .gnb-btn {display:none !important;}
+	.nav .gnb_wrap {padding:0 160px;}
+	.nav .gnb #gnb {max-width:630px;}
+	.nav .gnb .d1 {width:90px;}
+	.nav .gnb .d1 > a > span {font-size:16px;}
+	.nav .gnb .d2 > a > span {font-size:13px;}
+}
+
+
+/* schArea */
+.schArea {position:fixed;display:none;top:0;bottom:0;width:100%;height:100%;z-index:100000;background-color:rgba(255,255,255,0.8);}
+.schArea.opened {display:block;}
+.schArea .sch_cover {position:absolute;top:0;bottom:0;width:100%;height:100%;}
+
+.schBox {position:fixed;top:0;bottom:0;left:0;right:0;margin:auto;width:700px;height:120px;background-color:transparent;-webkit-animation-duration:0.5s;-moz-animation-duration:0.5s;-ms-animation-duration:0.5s;-o-animation-duration:0.5s;animation-duration:0.5s;}
+
+.schBox .schHdr {position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;width:100%;height:120px;}
+.schBox fieldset {width:100%;background-color:#fff;border-radius:42px;border:1px solid #ddd;-webkit-transition:0.3s ease-in-out;-moz-transition:0.3s ease-in-out;-o-transition:0.3s ease-in-out;transition:0.3s ease-in-out;}
+.schBox fieldset:hover,
+.schBox fieldset:focus {outline:0;color:#333;}
+.schBox fieldset .inputTypeText {display:inline-block;width:100%;font-size:24px;line-height:80px;padding:0 35px;font-weight:400;}
+.schBox fieldset .inputTypeText {-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-ms-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s;}
+.schBox #keyword {width:100%;height:80px;border:0;line-height:80px;font-size:24px;background:transparent;color:#333;text-align:center;font-weight:400;}
+.schBox .schBtn {border:0;position:absolute;height:29px;width:29px;top:25px;right:25px;outline:0;cursor:pointer;background-color:transparent;opacity:0.3;}
+
+.schBox .bestKeyword {width:100%;height:38px;overflow:hidden;margin-top:20px;}
+.schBox .bestKeyword ul {text-align:center;}
+.schBox .bestKeyword li {margin:0 12px;}
+.schBox .bestKeyword li a {display:block;font-size:22px;color:#333;font-weight:400;line-height:38px;-webkit-transition:0.3s ease-in-out;-moz-transition:0.3s ease-in-out;-o-transition:0.3s ease-in-out;transition:0.3s ease-in-out;opacity:0.7;}
+.schBox .bestKeyword li a:hover {opacity:1;}
+.schBox .bestKeyword li a:before {content:"#";font-size:22px;color:#444;font-weight:300;margin-right:2px;}
+
+.schBox p.button {margin:10px 0 0;text-align:right;}
+.schBox p.button a {padding:0 17px 0 4px;text-decoration:none;background:url("//img.echosting.cafe24.com/skin/base/common/ico_circle_arrow.png") no-repeat right center;}

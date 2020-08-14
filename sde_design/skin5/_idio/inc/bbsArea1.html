@@ -1,0 +1,36 @@
+<!--@css(/_idio/css/bbsArea1.css)-->
+
+<div class="bbsArea1">
+	<div class="inner">
+		<div class="titArea bbsArea1_tit">
+			<h2 class="bbsArea1-tit fadeInLeft"></h2>
+			<h3 class="bbsArea1-copy fadeInRight"></h3>
+		</div>
+		<div module="board_listpackage_1" class="fadeInUp">
+			<ul module="board_list_8" class="flex">
+				<!--
+					$count = 4
+					$main_list = yes
+					$subject_cut = 60
+					$main_list_reply_view = no
+				-->
+				<li class="mov03">
+					<a href="{$link_board_detail}" class="imgLink mov03" style="background-image:url('/file_data/{$member_id}/{$real_filename}');"></a>
+					{$checkbox}
+					<div class="info">
+						<div class="cate {$category_display|display}">{$category_name}</div>
+						<div class="subject"><a href="{$link_board_detail}">{$subject}</a><span class="txtEm">{$comment_count}</span></div>
+					</div>
+				</li>
+				<li class="mov03">
+					<a href="{$link_board_detail}" class="imgLink mov03" style="background-image:url('/file_data/{$member_id}/{$real_filename}');"></a>
+					{$checkbox}
+					<div class="info">
+						<div class="cate {$category_display|display}">{$category_name}</div>
+						<div class="subject"><a href="{$link_board_detail}">{$subject}</a><span class="txtEm">{$comment_count}</span></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

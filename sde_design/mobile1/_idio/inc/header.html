@@ -1,0 +1,48 @@
+<!--@css(/_idio/css/header.css)-->
+<!--@js(/_idio/js/header.js)-->
+
+<header id="header">
+	<div class="header">
+		<section id="topArea">
+			<div class="headerWrap mov03">
+				<div class="btn_wrapper">
+					<div class="menu_btn">
+						<div class="line sp_menu_anim"></div>
+						<div class="line sp_menu_anim"></div>
+						<div class="line sp_menu_anim"></div>
+					</div>
+				</div>
+				<div class="logo" onclick="location.href='/index.html'">
+					<img src="/_images/hdr_logo.png">
+				</div>
+				<div class="btn_sch"></div>
+				<div class="basket" module="Layout_orderBasketcount">
+					<a href="/order/basket.html" class="btnBasket"><span class="count {$basket_count_display|display}">{$basket_count}</span></a>
+				</div>
+			</div>
+		</section>
+	</div>
+</header>
+
+<div class="schArea">
+	<div class="sch_cover"></div>
+	<div class="schBox">
+		<div class="schHdr"  module="Layout_SearchHeader" id="{$search_box_id}">
+			<!--
+				$search_page = /product/search.html
+				$product_page = /product/detail.html
+			-->
+			<fieldset class="div">
+				<legend>검색</legend>
+				{$form.keyword}
+				<input class="schBtn" type="image" src="/_idio/img/sch.svg" alt="검색" onclick="{$action_search_submit}" />
+			</fieldset>
+			<div class="bestKeyword" module="search_hotkeyword">
+				<ul class="div">
+					<li><a href="{$hot_keyword_url}">{$hot_keyword_name}</a></li>
+					<li><a href="{$hot_keyword_url}">{$hot_keyword_name}</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

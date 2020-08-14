@@ -1,0 +1,66 @@
+#header .header {z-index:119;position:relative;text-align:center;vertical-align:top;}
+
+#header .headerWrap {position:relative;height:80px;background-color:rgba(255,255,255,1);z-index:2;}
+#header .headerWrap.headerWrap-fixed {position:fixed;width:100%;height:60px;top:0;background-color:rgba(255,255,255,0.8);box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+#header .headerWrap > div {position:absolute;top:0;bottom:0;margin:auto;height:50px;}
+#header .headerWrap > div a {position:relative;display:block;width:100%;height:100%;text-align:center;}
+
+#header .logo {left:0;right:0;width:250px;height:50px;text-align:center;vertical-align:middle;}
+#header .logo img {width:auto !important;height:50px;margin:0 auto;}
+
+#header .btn_wrapper {left:8px;width:50px;}
+#header .menu_btn {position:absolute;top:0;left:0;width:100%;height:100%;overflow:visible;cursor:pointer;-webkit-transition:all 400ms ease-out 0ms;-moz-transition:all 400ms ease-out 0ms;-o-transition:all 400ms ease-out 0ms;transition:all 400ms ease-out 0ms;}
+#header .menu_btn .line {position:absolute;background-color:#333;overflow:hidden;width:20px;height:2px;left:0;border-radius:1px;-webkit-transition:all 400ms ease-out 0ms;-moz-transition:all 400ms ease-out 0ms;-o-transition:all 400ms ease-out 0ms;transition:all 400ms ease-out 0ms;}
+#header .menu_btn .line:nth-child(1) {top:17px;left:15px;animation-delay:0.33s;}
+#header .menu_btn .line:nth-child(2) {top:24px;left:15px;animation-delay:0s;}
+#header .menu_btn .line:nth-child(3) {top:31px;left:15px;animation-delay:0.66s;}
+
+
+#header .btn_sch {width:50px;right:42px;background-image:url('/_idio/img/sch.svg');background-position:center center;background-repeat:no-repeat;background-size:25px auto;}
+
+#header .basket {width:50px;right:8px;}
+#header .basket a.btnBasket .count {display:block;position:absolute;top:11px;right:9px;width:15px;border-radius:50%;text-indent:0;line-height:15px;color:#fff;font-weight:bold;font-size:9px;background-color:#333;text-align:center;}
+#header .headerWrap .basket a {background-image:url('/_idio/img/cart.svg');background-position:center center;background-size:25px auto;background-repeat:no-repeat;}
+
+#header #topArea .xans-layout-mobilemaincategory {position:relative;height:50px;border-bottom:1px solid #e8e8e8;background-color:#fff;}
+#header #topArea .xans-layout-mobilemaincategory ul {display:inline-block;width:100%;padding:0;text-align:left;font-size:0;line-height:0;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+#header #topArea .xans-layout-mobilemaincategory ul li {display:inline-block;width:33.3%;font-size:13px;text-align:center;}
+#header #topArea .xans-layout-mobilemaincategory .afterNone {display:none;}
+#header #topArea .xans-layout-mobilemaincategory > ul {display:table;}
+#header #topArea .xans-layout-mobilemaincategory > ul > li {width:100%;}
+#header #topArea .xans-layout-mobilemaincategory > ul > li > ul {padding:0 40px;}
+#header #topArea .xans-layout-mobilemaincategory > ul > li > ul li {border-bottom:3px solid #fff;width:33%;}
+#header #topArea .xans-layout-mobilemaincategory > ul > li > ul li.selected {border-bottom-color:#555;}
+#header #topArea .xans-layout-mobilemaincategory > ul > li > ul li a {display:inline-block;width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;padding:22px 0 18px;font-weight:bold;color:#9a9a9a;}
+#header #topArea .xans-layout-mobilemaincategory > ul > li > ul li.selected a {color:#555;}
+#header #topArea .xans-layout-mobilemaincategory > ul > li > ul li a img {max-height:40px;}
+#header #topArea .xans-layout-mobilemaincategory p {position:absolute;top:0;background-color:#fff;}
+#header #topArea .xans-layout-mobilemaincategory p.btnPrev {left:0;display:none;}
+#header #topArea .xans-layout-mobilemaincategory p.btnNext {right:0;display:none;}
+#header #topArea .xans-layout-mobilemaincategory p a {display:inline-block;padding:13px 14px;}
+
+
+/* schArea */
+.schArea {position:fixed;display:none;top:0;bottom:0;width:100%;height:100%;z-index:100000;background-color:rgba(255,255,255,0.8);}
+.schArea.opened {display:block;}
+.schArea .sch_cover {position:absolute;top:0;bottom:0;width:100%;height:100%;}
+
+.schBox {position:fixed;top:0;bottom:0;left:0;right:0;margin:auto;width:80%;max-width:400px;height:120px;background-color:transparent;-webkit-animation-duration:0.5s;-moz-animation-duration:0.5s;-ms-animation-duration:0.5s;-o-animation-duration:0.5s;animation-duration:0.5s;}
+
+.schBox .schHdr {position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;width:100%;height:120px;}
+.schBox fieldset {width:100%;background-color:#fff;border-radius:42px;border:1px solid #ddd;-webkit-transition:0.3s ease-in-out;-moz-transition:0.3s ease-in-out;-o-transition:0.3s ease-in-out;transition:0.3s ease-in-out;}
+.schBox fieldset:hover,
+.schBox fieldset:focus {outline:0;color:#333;}
+.schBox fieldset .inputTypeText {display:inline-block;width:100%;font-size:16px;line-height:50px;padding:0 35px;font-weight:300;}
+.schBox fieldset .inputTypeText {-webkit-transition:all 0.3s;-moz-transition:all 0.3s;-ms-transition:all 0.3s;-o-transition:all 0.3s;transition:all 0.3s;}
+.schBox #keyword {width:100%;height:50px;border:0;line-height:50px;font-size:16px;background:transparent;color:#333;text-align:center;font-weight:400;}
+.schBox .schBtn {border:0;position:absolute;height:20px;width:20px;top:16px;right:16px;outline:0;cursor:pointer;background-color:transparent;opacity:0.3;}
+
+.schBox .bestKeyword {width:100%;height:28px;overflow:hidden;margin-top:10px;}
+.schBox .bestKeyword ul {text-align:center;}
+.schBox .bestKeyword li {margin:0 6px;}
+.schBox .bestKeyword li a {display:block;font-size:15px;color:#333;font-weight:400;line-height:28px;-webkit-transition:0.3s ease-in-out;-moz-transition:0.3s ease-in-out;-o-transition:0.3s ease-in-out;transition:0.3s ease-in-out;opacity:0.8;}
+.schBox .bestKeyword li a:before {content:"#";font-size:15px;color:#444;font-weight:300;margin-right:2px;}
+
+.schBox p.button {margin:10px 0 0;text-align:right;}
+.schBox p.button a {padding:0 17px 0 4px;text-decoration:none;background:url("//img.echosting.cafe24.com/skin/base/common/ico_circle_arrow.png") no-repeat right center;}

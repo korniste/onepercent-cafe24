@@ -1,0 +1,11 @@
+.bnrArea1 {position:relative;}
+.bnrArea1 > * {text-align:center;}
+
+.bnrArea1 .txt {width:100%;}
+.bnrArea1 .txt h2 {font-size:22px;line-height:32px;font-weight:400;color:#333;letter-spacing:-.5px;margin-bottom:20px;}
+.bnrArea1 .txt h3 {font-size:42px;line-height:56px;color:#333;margin-bottom:23px;letter-spacing:-0.07em;font-weight:200;}
+.bnrArea1 .txt p {font-size:18px;line-height:32px;font-weight:400;color:#999;margin-bottom:30px;}
+.bnrArea1 .txt a.more {display:inline-block;font-size:13px;line-height:28px;font-weight:600;padding-left:40px;padding-right:40px;letter-spacing:0.02em;}
+
+.bnrArea1 .img {margin:auto;margin-top:70px;}
+.bnrArea1 .img img {max-width:100%;}

@@ -1,0 +1,9 @@
+.mainBnr {padding-bottom:40px;margin-bottom:70px;}
+.mainBnr .slick-dots {bottom:-22px;}
+
+.mainBnr .slick-arrow {width:40px;height:60px;opacity:0;}
+.mainBnr:hover .slick-arrow {opacity:1;}
+.mainBnr .slick-arrow.slick-prev {left:22px;background-image:url('/_idio/img/arr_s_wh_01.svg');}
+.mainBnr .slick-arrow.slick-next {right:22px;background-image:url('/_idio/img/arr_s_wh_02.svg');}
+.mainBnr:hover .slick-arrow.slick-prev {left:35px;}
+.mainBnr:hover .slick-arrow.slick-next {right:35px;}

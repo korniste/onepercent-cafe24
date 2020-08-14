@@ -1,0 +1,15 @@
+.prdTab {width:100%;background-color:#f2f2f2;padding-top:40px;padding-bottom:10px;}
+
+.prdTab .slick-dots {position:relative;bottom:0;width:100%;height:auto;text-align:center;padding-bottom:30px;}
+.prdTab .slick-dots li {display:inline-block;width:auto;margin:0 7px;opacity:0.4;border-radius:0;background-color:transparent;}
+.prdTab .slick-dots li span {display:inline-block;font-size:17px;font-weight:400;line-height:42px;color:#333;letter-spacing:-.5px;}
+.prdTab .slick-dots li span:before {content:"#";color:#777;margin-right:2px;font-size:16px;font-weight:300;}
+.prdTab .slick-dots li.slick-active {opacity:1;}
+.prdTab .slick-dots li button {font-size:0;line-height:0;}
+
+.prdTab .prdList {padding:0 15px !important;margin:auto;max-width:600px;}
+.prdTab .thumbnail > a > img {border-radius:43%;overflow:hidden;}
+.prdTab .prdList > li {width:50% !important;position:relative;padding:0 8px !important;}
+.prdTab .prdList > li .likeButton,
+.prdTab .prdList > li .wish {display:none !important;}
+.prdTab .prdList .ic_sale {border-radius:50%;}

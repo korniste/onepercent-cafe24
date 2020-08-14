@@ -1,0 +1,10 @@
+body, .inner, .minW {width:100%;min-width:1180px;}
+body {overflow-x:hidden;}
+
+#wrap {width:100%;position:relative;padding-top:100px;}
+#header {width:100%;}
+#container {width:100%;padding:0;}
+#footer {width:100%;}
+#contents {padding-bottom:50px;}
+
+.inner {max-width:1480px;margin:0 auto;position:relative;}

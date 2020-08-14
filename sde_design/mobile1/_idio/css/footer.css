@@ -1,0 +1,29 @@
+#footer {width:100%;word-break:keep-all;color:#333;background-color:#f7f7f7;padding:55px 20px;}
+#footer > .inner {max-width:820px;}
+
+#footer .top {text-align:left;}
+#footer .top a {display:block;font-size:13px;line-height:21px;font-weight:400;margin-right:12px;color:#999;}
+#footer .top a strong {font-weight:400;color:#333;}
+
+#footer .logo {margin-top:30px;}
+#footer .logo img {width:auto;height:45px;}
+
+#footer .csInfo{margin-top:30px;}
+#footer .csInfo > * {display:inline-block;vertical-align:middle;}
+#footer .csInfo .tit {font-size:10px;font-weight:600;line-height:20px;letter-spacing:0.05em;color:#999;background-color:#e8e8e8;padding:0 8px;border-radius:4px;margin-right:6px;}
+#footer .csInfo .tel {font-size:17px;font-weight:400;letter-spacing:0;color:#555;line-height:26px;margin-right:8px;}
+#footer .cstime span {font-size:13px;line-height:26px;color:#888;margin-right:5px;}
+
+#footer .company {font-size:14px;line-height:24px;word-break:break-word;margin-top:30px;}
+#footer .company a {color:#333 !important;}
+#footer .company li {display:inline-block;margin-right:12px;}
+#footer .company span {font-size:14px;color:#aaa;}
+#footer .company span:after {display:inline-block;content:'';background-color:#ccc;width:1px;height:8px;margin:0 8px;vertical-align:0px;-webkit-transform: rotate(20deg);transform: rotate(20deg);}
+
+#footer .company .warning {font-size:13px;line-height:22px;color:#aaa;margin-top:30px;}
+
+#footer .copy {margin-top:50px;border-top:1px solid #ddd;padding-top:50px;}
+#footer .copy p {display:block;color:#666;line-height:21px;text-align:left;font-size:12px;letter-spacing:0;}
+
+#mobileQuickLink {z-index:301 !important;}
+#mobileBtnQuickLink {z-index:100 !important;}

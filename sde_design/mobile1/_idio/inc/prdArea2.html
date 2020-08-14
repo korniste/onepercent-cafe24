@@ -1,0 +1,32 @@
+<!-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	■ '★기본셋팅' 화면에서 리스트 타이틀 변경이 가능합니다.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!--@css(/_idio/css/prdArea2.css)-->
+
+<div class="ec-base-product typeThumb prdArea2" module="product_listmain_2">
+	<div class="main_tit">
+		<p class="tit prdArea2-tit"></p>
+		<p class="copy prdArea2-copy"></p>
+	</div>
+    <!--
+        $count = 4
+            ※ 상품진열갯수를 설정하는 변수입니다. 설정하지 않을 경우, 최대 200개의 상품이 진열 됩니다.
+            ※ 진열된 상품이 많으면, 쇼핑몰에 부하가 발생할 수 있습니다.
+        $moreview = yes
+        $cache = yes
+    -->
+    <ul class="prdArea2-ul prdList grid2">
+        <!--@import(/_idio/inc/prd.html)-->
+        <!--@import(/_idio/inc/prd.html)-->
+    </ul>
+	<div module="product_listmore_2" class="ec-base-paginate typeMoreview">
+		<a href="#none" onclick="{$more_action}" class="btnMore">
+			더보기(<span id="more_current_page_{$display_group}">{$current_page}</span>/<span id="more_total_page_{$display_group}">{$total_page}</span>)
+			<span class="icoMore"></span>
+		</a>
+	</div>
+</div>
