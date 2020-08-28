@@ -1,7 +1,0 @@
-.xans-product-listrecommend.ec-base-product {background-color:#f7f7f7;}
-.xans-product-listrecommend:first-child h2 {border-top:0;}
-.xans-product-listrecommend.ec-base-product h2 {display:none !important;margin:0;padding:14px 0 8px;font-size:13px;line-height:15px;font-weight:400;color:#999;background:none;text-align:center;}
-.xans-product-listrecommend .ec-base-paginate {margin:0 0 24px;}
-
-.xans-product-listrecommend [class*="grid"] {padding:0 10px !important;}
-.xans-product-listrecommend [class*="grid"] > li {padding:0 7px !important;margin:14px 0 !important;}

@@ -1,7 +1,0 @@
-.xans-board-movement {background:#f9f9f9;}
-.xans-board-movement .boardMovement {overflow:hidden;margin:0;font-size:13px;line-height:1.5em;}
-.xans-board-movement li {overflow:hidden;padding:6px 0 6px 60px;border-top:1px solid #e8e8e8;}
-.xans-board-movement strong,
-.xans-board-movement a {float:left;position:relative;height:30px;line-height:30px;}
-.xans-board-movement strong {font-size:11px;font-weight:600;left:-60px;margin-right:-60px;width:60px;color:#999;text-align:center;}
-.xans-board-movement a {font-size:13px;font-weight:normal;width:100%;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}

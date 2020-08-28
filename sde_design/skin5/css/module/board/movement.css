@@ -1,9 +1,0 @@
-.xans-board-movement {border-top:1px solid #e8e8e8;border-bottom:1px solid #e8e8e8;margin:20px 0;}
-.xans-board-movement li {overflow:hidden;padding:0 20px;border-bottom:1px solid #e8e8e8;font-size:14px;line-height:1.8;color:#333;}
-.xans-board-movement li strong,
-.xans-board-movement li a {float:left;padding:15px;}
-.xans-board-movement li strong {width:6%;padding-left:15px;color:#333;font-weight:normal;background:url("//img.echosting.cafe24.com/skin/base/board/ico_move_prev.gif") no-repeat 0 24px;opacity:0.7;}
-.xans-board-movement li a {width:860px;}
-
-.xans-board-movement li.next {border:0;}
-.xans-board-movement li.next strong {background:url("//img.echosting.cafe24.com/skin/base/board/ico_move_next.gif") no-repeat 0 25px;}

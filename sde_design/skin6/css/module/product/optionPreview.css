@@ -1,5 +1,0 @@
-.xans-product-optionpreview {display:inline;cursor:default;}
-.xans-product-optionpreview .prdOption {position:absolute;left:240px;top:36px;z-index:100;width:300px;}
-.xans-product-optionpreview .prdOption .cont {padding:12px 22px;background:#fff;border:1px solid #eee;border-radius:6px;box-shadow:3px 3px 5px rgba(27,27,27,0.1);}
-.xans-product-optionpreview .prdOption li {padding:3px 0;text-align:left;line-height:16px;font-size:13px;}
-.xans-product-optionpreview .prdOption .close {position:absolute;right:14px;top:14px;opacity:0.6;}

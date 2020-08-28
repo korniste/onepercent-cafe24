@@ -1,7 +1,0 @@
-.msgBox {margin:120px auto;width:600px;border-radius:12px;border:1px solid #eee;overflow:hidden;}
-.msgBox > * {width:100%;text-align:center;}
-.msgBox .titArea {font-size:13px;line-height:54px;height:56px;background-color:#f7f7f7;color:#222;}
-.msgBox .contArea {padding:0 30px;}
-.msgBox .contArea p.info {text-align:center;font-size:13px;color:#333;line-height:20px;border-bottom:1px solid #e8e8e8;padding:30px 0;}
-.msgBox .contArea div.form {text-align:center;font-size:13px;line-height:20px;color:#333;line-height:20px;}
-.msgBox .contArea div.form strong {font-size:13px;text-align:left;}
