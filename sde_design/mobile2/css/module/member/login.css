@@ -1,0 +1,59 @@
+.xans-member-login {margin:7px auto 29px;}
+.xans-member-login .loginWrap {background:#fff;}
+.xans-member-login .loginWrap .ec-base-tab {margin-bottom:12px;}
+.xans-member-login .titleArea {max-width:320px;height:43px;margin:0 auto;}
+
+.xans-member-login .loginHeader {padding-right:14px;}
+.xans-member-login .loginHeader:after {content:"";display:block;clear:both;}
+
+.xans-member-login .keyboard {line-height:23px;text-align:right;margin-bottom:12px;}
+.xans-member-login .keyboard .btnKey {position:relative;padding:0 20px 0 0;color:#757575;font-size:13px;cursor:pointer;border:0;background:none;}
+.xans-member-login .keyboard .btnKey.korean {display:inline-block;margin:0 14px 0 0;}
+.xans-member-login .keyboard .btnKey.special {display:inline-block;margin:0;}
+.xans-member-login .keyboard .btnKey:focus {outline:none;}
+.xans-member-login .keyboard .btnKey:before {content:"";position:absolute;right:0;top:50%;width:13px;height:8px;margin:-3px 0 0;background:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/member/ico_toggle_arrow_down.png") no-repeat 0 50%;background-size:9px auto;}
+.xans-member-login .keyboard .btnKey.selected {color:#333;border:none;}
+.xans-member-login .keyboard .btnKey.selected:before {background-image:url("//img.echosting.cafe24.com/skin/mobile_ko_KR/member/ico_toggle_arrow_up.png");}
+
+.xans-member-login .view {text-align:center;}
+.xans-member-login .view > div {display:none;padding:0 0 14px;}
+
+.xans-member-login .formBox {position:relative;margin:0px 14px 0;font-size:13px;}
+.xans-member-login .formBox:after {content:"";display:block;clear:both;}
+.xans-member-login .formBox .form {margin:0 0px 0 0;}
+.xans-member-login .formBox .form input[type="text"],
+.xans-member-login .formBox .form input[type="password"] {width:100%;height:43px;}
+.xans-member-login .formBox .form input[type="text"] {margin:0 0 7px;}
+.xans-member-login .formBox .option {overflow:hidden;line-height:43px;font-size:13px;}
+.xans-member-login .formBox .option label {font-size:13px;line-height:43px;}
+.xans-member-login .formBox .option > span {float:left;margin:0 10px 0 0;}
+.xans-member-login .formBox .option > span img {margin-top:-3px;}
+.xans-member-login .formBox .option > span:last-child {margin-right:0;}
+.xans-member-login .formBox .option .ssl em {color:#757575;vertical-align:middle;}
+.xans-member-login .formBox .option .ssl img {width:10px;margin:2px 3px 0 0;vertical-align:middle;}
+.xans-member-login .formBox .btnSubmit {line-height:43px;height:45px;}
+
+.xans-member-login .loginUtil {height:35px;margin:0 auto;font-size:13px;text-align:center;line-height:25px;}
+.xans-member-login .loginUtil .btnLogin {position:relative;display:inline-block;padding:0 10px 0 11px;color:#858585;font-weight:normal;}
+.xans-member-login .loginUtil .btnLogin:before {display:block;content:"";position:absolute;top:9px;left:-1px;width:1px;height:8px;background:#ddd;}
+.xans-member-login .loginUtil .btnLogin:first-child:before {display:none;}
+.xans-member-login .loginUtil .btnLogin .icon {display:inline-block;width:5px;padding:0 7px 0 6px;}
+
+.xans-member-login .snsLogin [class*='btn'] {display:block;margin-top:4px;border-radius:4px;text-align:center;height:38px;line-height:37px;position:relative;color:#fff;}
+.xans-member-login .snsLogin .btnKakao {color:#333;}
+.xans-member-login .snsLogin [class*='btn'] span {background-size:20px auto;background-repeat:no-repeat;background-position:center center;position:absolute;top:0;left:0;border-right:1px solid rgba(255,255,255,0.2);width:39px;height:38px;}
+.xans-member-login .snsLogin .btnNaver {background-color:#26c826;}
+.xans-member-login .snsLogin .btnFacebook {background-color:#4267b2;}
+.xans-member-login .snsLogin .btnGoogle {background-color:#5086f7;}
+.xans-member-login .snsLogin .btnKakao {background-color:#ffd200;}
+.xans-member-login .snsLogin .btnLine {background-color:#26c826;}
+.xans-member-login .snsLogin .btnApple {background-color:#222;}
+.xans-member-login .snsLogin .btnNaver span {background-image:url('/_idio/img/sns_login_01.png');}
+.xans-member-login .snsLogin .btnFacebook span {background-image:url('/_idio/img/sns_login_02.png');}
+.xans-member-login .snsLogin .btnGoogle span {background-image:url('/_idio/img/sns_login_03.png');}
+.xans-member-login .snsLogin .btnKakao span {background-image:url('/_idio/img/sns_login_04.png');}
+.xans-member-login .snsLogin .btnLine span {background-image:url('/_idio/img/sns_login_05.png');}
+.xans-member-login .snsLogin .btnApple span {background-image:url('/_idio/img/sns_login_06.png');}
+
+.xans-member-login #member_id,
+.xans-member-login #member_passwd {font-size:13px;}

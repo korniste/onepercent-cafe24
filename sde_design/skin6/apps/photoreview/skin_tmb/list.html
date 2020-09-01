@@ -1,0 +1,39 @@
+<div module="photoreview_display" class="photoreview skin_tmb">
+	<!--@css(./list.css)-->
+	<!--@js(./list.js)-->
+	<!--
+		$point=show
+		$board_no=4
+	 -->
+	<div class="titBox">
+		<h2><i class="fas fa-camera-retro"></i>이 상품의 포토리뷰 모아보기</h2>
+		<div class="disnone">
+			<select class="photoreview-outputNumber disnone">
+				<option value=10>10개씩 보기</option>
+				<option value=20>20개씩 보기</option>
+				<option value=30>30개씩 보기</option>
+				<option value=50>50개씩 보기</option>
+			</select>
+			<select class="photoreview-viewMode disnone">
+				<option value="img">포토 리뷰만 보기</option>
+				<option value="text">텍스트 리뷰만 보기</option>
+				<option value="all">모든 리뷰 보기</option>
+			</select>
+		</div>
+	</div>
+	<div class="contBox">
+		<table class="prv_table">
+			<tbody>
+				<tr id="preview{$no}" class="rv_list">
+					<td class="img"><a class="preview_detail" href="{$no}" style="background-image:url({$rimg})"></a></td>
+				</tr>
+				<tr id="preview{$no}" class="rv_list">
+					<td class="img"><a class="preview_detail" href="{$no}" style="background-image:url({$rimg})"></a></td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="photoreview-paging">
+			{$page}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,67 @@
+.xans-board-listpackage {background:#fff;}
+.xans-board-listpackage .subject img {width:auto;height:10px;vertical-align:middle;margin-right:2px;}
+.xans-board-listpackage .point img {height:12px;margin-bottom:8px;vertical-align:top;}
+
+/* 글쓰기 버튼 */
+.xans-board-listpackage .ec-base-button {padding:0 14px;}
+
+/* 정렬 */
+.xans-board-listpackage .boardSort {padding:0 14px;}
+.xans-board-listpackage .boardSort:after {content:"";display:block;clear:both;}
+.xans-board-listpackage .boardSort span {float:left;width:49%;font-size:13px;}
+.xans-board-listpackage .boardSort span:first-of-type {padding:0 2% 0 0;}
+.xans-board-listpackage .boardSort span select {margin:7px 0;width:100%;}
+
+/* 펼침 */
+.xans-board-notice .view,
+.xans-board-fixed .view,
+.xans-board-list .view {position:absolute;top:0;right:0;width:36px;height:100%;}
+.xans-board-notice .view .btnToggle,
+.xans-board-fixed .view .btnToggle,
+.xans-board-list .view .btnToggle {display:inline-block;width:100%;height:100%;padding:0;margin:0;border:0;background:url("/_untapped/img/sidePanel_arr_01.png") no-repeat 50% 50%;background-size:10px 7px;}
+.xans-board-notice .view .btnToggle img,
+.xans-board-fixed .view .btnToggle img,
+.xans-board-list .view .btnToggle img {display:none !important;}
+
+/* 공지사항 */
+.xans-board-notice {margin:-1px 0 0;font-size:13px;border-top:1px solid #e8e8e8;background:#fff;}
+.xans-board-notice li {overflow:hidden;position:relative;padding:14px 0 14px 7px;min-height:50px;color:#999;border-bottom:1px solid #e8e8e8;background:#f7f7f7;}
+.xans-board-notice .thumb {float:right;}
+.xans-board-notice .thumb img {width:65px;max-height:70px;padding:0 12px;}
+.xans-board-notice .summary {position:relative;padding:0 50px 0 7px;}
+.xans-board-notice .summary a {display:block;color:#999;}
+.xans-board-notice .summary > a > span {position:relative;padding:0 6px 0 0;font-size:13px;}
+.xans-board-notice .subject {display:block;padding:0 0 7px;font-size:13px;line-height:1.3em;color:#333;}
+.xans-board-notice .notice {line-height:1.5em;color:#aaa;margin-right:5px;font-weight:normal;}
+.xans-board-notice .comment {color:#555;}
+
+/* 고정글 */
+.xans-board-fixed {margin:-1px 0 0;font-size:13px;border-top:1px solid #e8e8e8;background:#fff;}
+.xans-board-fixed li {overflow:hidden;position:relative;padding:14px 0 14px 7px;min-height:50px;color:#999;border-bottom:1px solid #e8e8e8;}
+.xans-board-fixed .thumb {float:right;}
+.xans-board-fixed .thumb img {width:65px;max-height:70px;padding:0 11px;}
+.xans-board-fixed .summary {position:relative;padding:0 50px 0 7px;}
+.xans-board-fixed .summary a {display:block;color:#999;}
+.xans-board-fixed .summary > a > span {position:relative;padding:0 6px 0 0;font-size:13px;}
+.xans-board-fixed .subject {display:block;padding:0 0 6px;font-size:13px;line-height:1.3em;color:#333;font-weight:normal;}
+.xans-board-fixed .comment {color:#555;}
+
+/* 게시글 */
+.xans-board-list {margin:-1px 0 0;font-size:13px;border-top:1px solid #e8e8e8;background:#fff;}
+.xans-board-list li {overflow:hidden;position:relative;padding:14px 0 14px 7px;min-height:50px;color:#999;border-bottom:1px solid #e8e8e8;}
+.xans-board-list .thumb {float:right;}
+.xans-board-list .thumb img {width:65px;max-height:70px;padding:0 11px;}
+.xans-board-list .summary {position:relative;padding:0 50px 0 7px;}
+.xans-board-list .summary a {display:block;color:#999;}
+.xans-board-list .summary > a > span {position:relative;padding:0 6px 0 0;font-size:13px;}
+.xans-board-list .subject {display:block;padding:0 0 6px;font-size:13px;line-height:1.3em;color:#333;font-weight:normal;}
+.xans-board-list .comment {color:#555;}
+
+/* 상품후기 아코디언형 */
+.xans-board-listpackage .contentView {margin:0;padding:24px;min-height:0;background:#f7f7f7;color:#333;font-size:13px;word-wrap:break-word;}
+.xans-board-listpackage .contentView img {margin:0 0 14px;max-width:100%;}
+
+/* 게시글 없음 */
+.xans-board-empty {padding:28px 0;text-align:center;font-size:13px;background:#fff;}
+
+.xans-board-paging-4.ec-base-paginate.typeList {background:#fff;}

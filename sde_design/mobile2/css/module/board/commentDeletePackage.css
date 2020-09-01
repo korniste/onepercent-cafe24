@@ -1,0 +1,6 @@
+.xans-board-commentdel {margin:14px;line-height:1.5;border:1px solid #e8e8e8;}
+.xans-board-commentdel h3 {color:#333;background:#f0f0f0;text-align:center;line-height:43px;font-size:13px;}
+.xans-board-commentdel .comment {background:#fff;}
+.xans-board-commentdel .comment fieldset {margin:0 auto;padding:28px;width:255px;}
+.xans-board-commentdel .info {padding:0 0 10px;text-align:center;}
+.xans-board-commentdel .password label {display:none;}

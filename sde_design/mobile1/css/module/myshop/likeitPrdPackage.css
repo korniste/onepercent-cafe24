@@ -1,0 +1,12 @@
+.xans-myshop-likeitprdpackage .empty {padding:30px 0;font-size:13px;text-align:center;border:1px solid #e8e8e8;background-color:#fff;}
+.xans-myshop-likeitprdpackage .ec-base-button {margin:0 7px;padding:7px;border:1px solid #e8e8e8;border-top-width:0;}
+
+/* 상품정보 */
+.xans-myshop-likeproductlist {margin:8px 7px 0;}
+.xans-myshop-likeproductlist .title h2 {padding:0 0 0 14px;line-height:43px;font-size:13px;border-bottom:1px solid #e8e8e8;color:#333;background-color:#f0f0f0;}
+.xans-myshop-likeproductlist .prdList {margin:-1px 0 0;border:1px solid #e8e8e8;border-bottom-width:0;background-color:#fff;}
+.xans-myshop-likeproductlist .prdList li {position:relative;padding:7px 14px 14px;border-bottom:1px solid #e8e8e8;}
+.xans-myshop-likeproductlist .prdList .benefit {position:relative;margin:7px 0 0;min-height:75px;}
+.xans-myshop-likeproductlist .prdList .benefit .thumbnail {overflow:hidden;position:absolute;top:0;left:0;display:block;width:73px;height:73px;border:1px solid #f8f8f8;}
+.xans-myshop-likeproductlist .prdList .benefit .thumbnail img {width:100%;height:auto;}
+.xans-myshop-likeproductlist .prdList .benefit .description {margin:0 0 0 87px;}

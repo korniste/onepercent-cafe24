@@ -1,0 +1,23 @@
+.photoreview .reviewDetail {display:block;position:fixed;width:100%;height:100%;top:0;left:0;z-index:99999;background-color:rgba(0,0,0,0.7);}
+.photoreview .reviewDetail td {display:flex;flex-wrap:nowrap;position:absolute;width:1020px;height:75%;top:0;bottom:0;left:0;right:0;padding:0;margin:auto;box-shadow:0 2px 5px rgba(0,0,0,0.2);}
+.photoreview .reviewDetail td .contBox {flex-basis:40%;background-color:#fff;overflow:hidden;}
+.photoreview .reviewDetail td .contBox .rv_info {position:relative;width:100%;height:125px;padding:25px 35px 0;background-color:#f7f7f7;}
+.photoreview .reviewDetail td .contBox .rv_info p {text-overflow:ellipsis;-o-text-overflow:ellipsis;overflow:hidden;white-space:nowrap;word-wrap:normal !important;}
+.photoreview .reviewDetail td .contBox .rv_info p.rate {margin-top:0;}
+.photoreview .reviewDetail td .contBox .rv_info p.subject {font-size:17px;font-weight:400;line-height:26px;margin-top:7px;}
+.photoreview .reviewDetail td .contBox .rv_info p.writer {font-size:13px;line-height:15px;color:#999;padding-left:2px;margin-top:6px;}
+.photoreview .reviewDetail td .contBox .rv_info p.writer .date {display:inline-block;position:relative;margin-left:8px;padding-left:8px;}
+.photoreview .reviewDetail td .contBox .rv_info p.writer .date:before {display:block;content:"";position:absolute;top:3px;left:0;width:1px;height:7px;background:#ddd;}
+.photoreview .reviewDetail td .contBox .rv_info .prd_tmb {display:none;position:absolute;width:60px;height:60px;border-radius:40%;top:23px;right:20px;}
+.photoreview .reviewDetail td .contBox .rv_content {height:500px;padding:25px 35px;overflow-y:auto;}
+.photoreview .reviewDetail td .contBox .rv_content * {font-family:inherit !important;font-weight:normal !important;font-size:15px !important;line-height:1.8 !important;color:#666 !important;}
+.photoreview .reviewDetail td .contBox .rv_content .cont_list {display:none;}
+.photoreview .reviewDetail td .imgBox {position:relative;flex-basis:60%;overflow:hidden;}
+.photoreview .reviewDetail td .imgBox a {display:block;position:absolute;top:0;bottom:0;margin:auto;width:37px;height:37px;z-index:11;border-radius:50%;}
+.photoreview .reviewDetail td .imgBox a.prev {left:14px;background:url('/_idio/img/rv_dtl_arr_01.png') rgba(50,50,50,0.6) no-repeat center center;}
+.photoreview .reviewDetail td .imgBox a.next {right:14px;background:url('/_idio/img/rv_dtl_arr_02.png') rgba(50,50,50,0.6) no-repeat center center;}
+.photoreview .reviewDetail td .imgBox .item {background:#333;position:absolute;width:100%;height:100%;left:0;opacity:0;}
+.photoreview .reviewDetail td .imgBox .item.active {opacity:1;}
+.photoreview .reviewDetail td .imgBox .item img {max-width:100%;max-height:100%;width:auto;height:auto;position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;}
+.photoreview .reviewDetail .rv_btn_close {display:block;position:absolute;top:0;right:-45px;width:45px;height:45px;background:url('/_idio/img/rv_btn_close.png') #333 no-repeat center center;cursor:pointer;z-index:11;}
+.photoreview .reviewDetail {display:none;}

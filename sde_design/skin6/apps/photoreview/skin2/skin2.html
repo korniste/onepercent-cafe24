@@ -1,0 +1,42 @@
+<!--@layout(/layout/basic/layout.html)-->
+
+<div module="photoreview_display" class="photoreview_skin2 mt40">
+	<div class="tit">Photo Reviews</div>
+    <!--@css(./lister.css)-->
+    <!--@css(./skin2.css)-->
+    <!--@js(./lister.js)-->
+    <!--@js(./skin2.js)-->
+    <!-- 
+       $count=7
+       $point=show
+       $board_no=4
+    -->
+    <div class="lister_wrap">
+        <dl>
+            <dt><a href="#none" rel="{$no}" style="background-image:url('{$rhimg}');"></a></dt>
+            <dd>
+                <p class="sbj elp">{$rsub}</p>
+                <p class="point is_rating"><img src="/_m6/img/ico_point_{$rpoint}.png" alt="{$rpoint}점" /></p>
+                <p class="post">{$rwriter}<span>{$rdate}</span></p>
+            </dd>
+        </dl>
+        <dl>
+            <dt><a href="#none" rel="{$no}" style="background-image:url('{$rhimg}');"></a></dt>
+            <dd>
+                <p class="sbj elp">{$rsub}</p>
+                <p class="point is_rating"><img src="/_m6/img/ico_point_{$rpoint}.png" alt="{$rpoint}점" /></p>
+                <p class="post">{$rwriter}<span>{$rdate}</span></p>
+            </dd>
+        </dl>
+    </div>
+    <p class="more"><a href="#none">VIEW MORE<i class="fas fa-angle-down"></i></a></p>
+    <div class="detail-dimmed sb">
+        <div class="detail">
+            <p class="post"><span class="rwriter"></span><span class="rdate"></span><a href="#none" class="close">닫기</a></p>
+			<div class="cont">
+				<p class="image"><img src="//img.echosting.cafe24.com/apps/photo-review/skin3/@img_photo9.jpg" alt="" /></p>
+				<div class="contents"></div>
+			</div>
+        </div>
+    </div>
+</div>
